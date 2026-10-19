@@ -1,0 +1,12 @@
+Software Engineering Intern
+
+About the role
+You will build mission software for our customers.
+
+Requirements
+- Currently pursuing a Bachelor's degree in Computer Science
+- Must be a U.S. citizen due to contract requirements
+- Graduating by May 2028
+
+Responsibilities
+- Write code, measure it, ship it.

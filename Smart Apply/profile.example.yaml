@@ -1,0 +1,157 @@
+# EXAMPLE profile for a fictional applicant. Copy to profile.yaml (git-ignored) and replace every value,
+# or run `python -m smartapply setup`. EEO answers and attestations are yours to set; null/decline = left for you.
+first_name: Alex
+last_name: Doe
+preferred_name: ''
+email: alex.doe@example.com
+phone: +1-555-010-0100
+phone_digits: '5550100100'
+phone_country_code: '+1'
+phone_type: Mobile
+linkedin: https://www.linkedin.com/in/alex-doe/
+github: https://github.com/alexdoe-dev
+portfolio: ''
+pronouns: ''
+current_organization: State University
+address:
+  street: 123 Main Street
+  street2: Apt 1
+  city: Springfield
+  state: IL
+  state_name: Illinois
+  zip: '12345'
+  country: United States of America
+  country_code: US
+school:
+  high_school_name: Springfield High School
+  high_school_graduation: 2024-05
+  sat: ''
+  act: ''
+  name: State University
+  city: College Town
+  state: IL
+  degree: Bachelor of Science
+  degree_short: BS
+  major: Computer Science
+  gpa: '3.50'
+  gpa_scale: '4.0'
+  start: 2024-08
+  graduation: 2028-05
+  level: Bachelor's
+work_auth:
+  authorized_us: true
+  sponsorship_required: false
+  status: U.S. permanent resident (green card)
+  citizen: false
+  itar_us_person: true
+  statement: Authorized to work in the U.S. without sponsorship
+  citizenship: []
+experiences:
+- company: Acme Labs
+  title: Software Engineer Intern
+  location: Austin, TX
+  start: 2026-02
+  end: 2026-06
+  kind: internship
+- company: State University, Generative AI Lab
+  title: Undergraduate Research Assistant
+  location: College Town, IL
+  start: 2025-01
+  end: 2025-05
+  kind: research
+- company: State University, Vision Lab
+  title: Undergraduate Research Assistant
+  location: College Town, IL
+  start: 2025-01
+  end: 2025-05
+  kind: research
+- company: OpenProjectA (Example Foundation)
+  title: Open Source Contributor
+  location: Remote
+  start: 2025-02
+  end: null
+  kind: open_source
+- company: OpenProjectB (Example Foundation)
+  title: Open Source Contributor
+  location: Remote
+  start: 2026-05
+  end: null
+  kind: open_source
+eeo:
+  gender: Decline to self-identify
+  hispanic_latino: Decline to self-identify
+  ethnicity: Decline to self-identify
+  veteran: Decline to self-identify
+  disability: Decline to self-identify
+  sexual_orientation: Decline to self-identify
+  transgender: Decline to self-identify
+  signature_name: ''
+defaults:
+  availability: Available May to August 2027, full 12 weeks
+  start_date_text: May 2027
+  how_heard: Job Board
+  how_heard_detail: Job Board
+  salary_policy: match posting
+  relocation: 'Yes'
+  relocation_cities:
+  - New York
+  - NYC
+  - San Francisco
+  - Chicago
+  - Los Angeles
+  - Palo Alto
+  - Mountain View
+  - Menlo Park
+  - San Mateo
+  - Sunnyvale
+  - San Jose
+  - Seattle
+  - Boston
+  - Austin
+  - Miami
+  - Washington
+  - San Diego
+  - Denver
+  - Atlanta
+  - Philadelphia
+  - Nashville
+  remote_ok: true
+  over_18: true
+  previous_employee_default: false
+  previously_interviewed: 'No'
+  background_check: 'Yes'
+  text_consent: 'No'
+  languages:
+  - English
+  summer_start: '2027-05-01'
+  driver_license: 'Yes'
+  essential_functions: 'Yes'
+  travel: 'Yes'
+  onsite: 'Yes'
+  commute_city: Springfield
+  pay_range_ok: 'Yes'
+  salary_text: Open / negotiable
+  full_time_availability: 'Yes'
+  offer_deadlines: 'No'
+  current_offers: 'No'
+  further_education: 'No'
+attestations:
+  government_employment_5y: null
+  relatives_at_employer: null
+  friends_at_employer: null
+  relatives_in_government: null
+  conflict_of_interest: null
+  criminal_conviction: null
+  debarred: null
+  non_compete_bound: null
+  other_employment: null
+  owns_intellectual_property: null
+  relatives_employers: []
+resume_filename: Alex_Doe_Resume.pdf
+native_name: Alex Doe
+transcript_path: ''
+never_claim:
+- U.S. citizen
+- security clearance
+- fluent French
+- Present at Acme Labs

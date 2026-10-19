@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Fixture: single-page form (Lever-like)</title></head>
+<body>
+<form id="application-form" method="post" action="/apply">
+  <label for="name">Full name</label><input id="name" name="name">
+  <label for="email">Email</label><input id="email" name="email" type="email">
+  <label for="resume">Resume</label><input id="resume" name="resume" type="file">
+  <label><input type="checkbox" name="agree"> I agree</label>
+  <button type="button" id="add">Add another</button>
+  <button type="submit" id="btn-submit">Submit application</button>
+</form>
+<pre id="log"></pre>
+<script>
+  document.getElementById('application-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const r = await fetch('/apply', { method: 'POST', body: new FormData(e.target) }).catch(e => ({ status: 'ERR' }));
+    document.getElementById('log').textContent += 'apply:' + r.status + '\n';
+  });
+</script>
+</body></html>

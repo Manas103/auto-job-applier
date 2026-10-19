@@ -1,0 +1,355 @@
+{
+ "id": "aaa1230c5e451001fb45868cbfee0000",
+ "instructions": "<div><p><b>Demographic Survey/U.S. Equal Employment Opportunity Information</b></p></div><p>To ensure that we comply with reporting requirements and to learn more about how we can increase diversity in our candidate pool, we invite you to provide demographic information in a confidential survey.</p><p>Providing this information is optional. It will not be used in the hiring process, and has no effect on your opportunity for employment.</p><p>DraftKings ensures equal employment opportunity without discrimination or harassment based on race, color, religion, sex (including pregnancy, childbirth, or related medical conditions), sexual orientation, gender identity or expression, age, disability, national origin, marital or domestic/civil partnership status, genetic information, citizenship status, veteran status, or any other characteristic protected by law.</p><p></p><p><i>By clicking &#34;Next&#34; below, I consent to DraftKings\u2019 collection and use of my sensitive personal information, including race or ethnicity and sexual orientation data for purposes of evaluating our Inclusion, Equity, &amp; Belonging initiatives. The provision of such information is optional. You may withdraw your consent by emailing <a href=\"mailto:privacy&#64;draftkings.com\" target=\"_blank\"><span>privacy&#64;draftkings.com</span></a>. For details about DraftKings\u2019 collection and use of your information, please see our </i><a href=\"https://careers.draftkings.com/media/x3ann3n3/dk-careers-website-privacy-notice-06-10-21.pdf\" target=\"_blank\">Privacy Notice</a><i>.</i></p>",
+ "questions": [
+  {
+   "id": "aaa1230c5e451001fb458b633b130007",
+   "body": "<p><b>Do you identify as LGBTQ&#43;?</b></p>",
+   "order": "h",
+   "possibleAnswers": [
+    {
+     "id": "0f4eda0fed251001f6cf9ee2cbf30001",
+     "answerText": "I do identify as LGBTQ+",
+     "order": "a"
+    },
+    {
+     "id": "0f4eda0fed251001f6cf9f7df5260000",
+     "answerText": "I do not identify as LGBTQ+",
+     "order": "b"
+    },
+    {
+     "id": "0f4eda0fed251001f6cf9f7df5260001",
+     "answerText": "I prefer not to disclose",
+     "order": "c"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "aaa1230c5e451001fb458b633b130003",
+   "body": "What is your veteran status?",
+   "order": "g",
+   "possibleAnswers": [
+    {
+     "id": "774d00257d2b01f191bd866235077409",
+     "answerText": "I am a veteran",
+     "order": "a"
+    },
+    {
+     "id": "774d00257d2b0178c6cd866235077509",
+     "answerText": "I am not a veteran",
+     "order": "b"
+    },
+    {
+     "id": "774d00257d2b01a424f1866235077609",
+     "answerText": "I prefer not to disclose",
+     "order": "c"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "aaa1230c5e451001fb458ac901ee0002",
+   "body": "Please select the race/ethnicity with which you primarily identify.",
+   "order": "f",
+   "possibleAnswers": [
+    {
+     "id": "774d00257d2b011f726d8f623507b109",
+     "answerText": "American Indian or Alaska Native",
+     "order": "a"
+    },
+    {
+     "id": "774d00257d2b01f09f7d8f623507b209",
+     "answerText": "Asian",
+     "order": "b"
+    },
+    {
+     "id": "774d00257d2b01b22f8d8f623507b309",
+     "answerText": "Black or African American",
+     "order": "c"
+    },
+    {
+     "id": "774d00257d2b017fe89c8f623507b409",
+     "answerText": "Hispanic or Latino",
+     "order": "d"
+    },
+    {
+     "id": "774d00257d2b0134c6ac8f623507b509",
+     "answerText": "Native Hawaiian or Other Pacific Islander",
+     "order": "e"
+    },
+    {
+     "id": "774d00257d2b018528d18f623507b609",
+     "answerText": "White",
+     "order": "f"
+    },
+    {
+     "id": "774d00257d2b01cf69e08f623507b709",
+     "answerText": "Two or more races",
+     "order": "g"
+    },
+    {
+     "id": "774d00257d2b01800bef8f623507b809",
+     "answerText": "I prefer not to disclose",
+     "order": "h"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "aaa1230c5e451001fb458a2dbb030004",
+   "body": "Please select your gender.",
+   "order": "e",
+   "possibleAnswers": [
+    {
+     "id": "774d00257d2b010890e698623507f709",
+     "answerText": "Man",
+     "order": "a"
+    },
+    {
+     "id": "774d00257d2b010d5bf998623507f809",
+     "answerText": "Woman",
+     "order": "b"
+    },
+    {
+     "id": "774d00257d2b013b7c0999623507f909",
+     "answerText": "Non-binary",
+     "order": "c"
+    },
+    {
+     "id": "774d00257d2b011ee71899623507fa09",
+     "answerText": "I prefer not to disclose",
+     "order": "d"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "aaa1230c5e451001fb458a2dbb030003",
+   "body": "What is your projected/approximate graduation date?",
+   "order": "d",
+   "required": true,
+   "type": {
+    "id": "85fb160ed47910001589e3a427670070",
+    "descriptor": "Date"
+   }
+  },
+  {
+   "id": "aaa1230c5e451001fb458727c43a0004",
+   "body": "What is your school? (Select \"Other\" if it is not in list)",
+   "order": "c",
+   "possibleAnswers": [
+    {
+     "id": "5258317cbbe410012c1ee3b532da0001",
+     "answerText": "Cornell University",
+     "order": "a"
+    },
+    {
+     "id": "5258317cbbe410012c1ee45044890000",
+     "answerText": "Dartmouth College",
+     "order": "b"
+    },
+    {
+     "id": "5258317cbbe410012c1ee45044890001",
+     "answerText": "Duke University",
+     "order": "c"
+    },
+    {
+     "id": "5258317cbbe410012c1ee45044890002",
+     "answerText": "Harvard University",
+     "order": "d"
+    },
+    {
+     "id": "5258317cbbe410012c1ee4ea647c0000",
+     "answerText": "Howard University",
+     "order": "e"
+    },
+    {
+     "id": "5258317cbbe410012c1ee4ea647c0001",
+     "answerText": "Northeastern University",
+     "order": "f"
+    },
+    {
+     "id": "5258317cbbe410012c1ee4ea647c0002",
+     "answerText": "Pennsylvania State University",
+     "order": "g"
+    },
+    {
+     "id": "5258317cbbe410012c1ee4ea647c0003",
+     "answerText": "Rochester Institute of Technology",
+     "order": "h"
+    },
+    {
+     "id": "5258317cbbe410012c1ee5852bcb0000",
+     "answerText": "Tufts University",
+     "order": "i"
+    },
+    {
+     "id": "5258317cbbe410012c1ee5852bcb0001",
+     "answerText": "University of California - Berkeley",
+     "order": "j"
+    },
+    {
+     "id": "5258317cbbe410012c1ee6202d6b0000",
+     "answerText": "University of Florida",
+     "order": "k"
+    },
+    {
+     "id": "5258317cbbe410012c1ee6202d6b0001",
+     "answerText": "University of Illinois-Urbana-Champaign",
+     "order": "l"
+    },
+    {
+     "id": "5258317cbbe410012c1ee6202d6b0002",
+     "answerText": "University of Maryland",
+     "order": "m"
+    },
+    {
+     "id": "5258317cbbe410012c1ee6202d6b0003",
+     "answerText": "University of Massachusetts - Amherst",
+     "order": "n"
+    },
+    {
+     "id": "5258317cbbe410012c1ee6b9d2a70000",
+     "answerText": "University of Michigan",
+     "order": "o"
+    },
+    {
+     "id": "5258317cbbe410012c1ee6b9d2a70001",
+     "answerText": "University of Minnesota",
+     "order": "p"
+    },
+    {
+     "id": "5258317cbbe410012c1ee6b9d2a70002",
+     "answerText": "University of Pennsylvania",
+     "order": "q"
+    },
+    {
+     "id": "5258317cbbe410012c1ee753ce820000",
+     "answerText": "University of Texas - Austin",
+     "order": "r"
+    },
+    {
+     "id": "5258317cbbe410012c1ee753ce820001",
+     "answerText": "University of Toronto",
+     "order": "s"
+    },
+    {
+     "id": "5258317cbbe410012c1ee753ce820002",
+     "answerText": "University of Virginia",
+     "order": "t"
+    },
+    {
+     "id": "5258317cbbe410012c1ee7ee8e0c0000",
+     "answerText": "University of Wisconsin-Madison",
+     "order": "u"
+    },
+    {
+     "id": "5258317cbbe410012c1ee7ee8e0c0001",
+     "answerText": "Washington University - St. Louis",
+     "order": "v"
+    },
+    {
+     "id": "5258317cbbe410012c1ee7ee8e0c0002",
+     "answerText": "Wellesley College",
+     "order": "w"
+    },
+    {
+     "id": "5258317cbbe410012c1ee88970cf0000",
+     "answerText": "Worcester Polytechnic Institute",
+     "order": "x"
+    },
+    {
+     "id": "5258317cbbe410012c1ee88970cf0001",
+     "branchingQuestion": {
+      "id": "aaa1230c5e451001fb458a2dbb030002",
+      "body": "School Name:",
+      "order": "c.y",
+      "required": true,
+      "type": {
+       "id": "c4d9bd57996c100025ab7d7f5aed0046",
+       "descriptor": "Text"
+      }
+     },
+     "answerText": "Other",
+     "order": "y"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "aaa1230c5e451001fb458727c43a0001",
+   "body": "Will you now or in the future require sponsorship for employment visa status (i.e. H1B visa)?",
+   "order": "b",
+   "possibleAnswers": [
+    {
+     "id": "774d00257d2b0130da8c9e6235071e0a",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "774d00257d2b01781fb39e6235071f0a",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "aaa1230c5e451001fb45868cbfee0001",
+   "body": "<p><b>Are you legally authorized to work in the country where this job is located?</b></p>",
+   "order": "a",
+   "possibleAnswers": [
+    {
+     "id": "91ac0f6164c01001f09e1a40f78c0001",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "91ac0f6164c01001f09e1a40f78c0002",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "aaa1230c5e451001fb458a2dbb030002",
+   "body": "School Name:",
+   "order": "c.y",
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c100025ab7d7f5aed0046",
+    "descriptor": "Text"
+   }
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Fixture: Ashby-like (no form element, typeless buttons)</title></head>
+<body>
+<div class="ashby-application-form-field-entry" data-field-path="_systemfield_name">
+  <label for="_systemfield_name">Name</label><input id="_systemfield_name">
+</div>
+<div class="ashby-application-form-field-entry" data-field-path="q1">
+  <span>Requesting visa sponsorship?</span>
+  <button class="ashby-application-form-input-yesno-option" data-option="yes">Yes</button>
+  <button class="ashby-application-form-input-yesno-option" data-option="no">No</button>
+</div>
+<button class="ashby-application-form-submit-button" id="submit">Submit Application</button>
+<pre id="log"></pre>
+<script>
+  document.querySelectorAll('.ashby-application-form-input-yesno-option').forEach(b => b.addEventListener('click', () => {
+    b.parentElement.querySelectorAll('button').forEach(x => x.removeAttribute('aria-pressed'));
+    b.setAttribute('aria-pressed', 'true');
+  }));
+  document.getElementById('submit').addEventListener('click', async () => {
+    const r = await fetch('/apply?op=ApiSubmitSingleApplicationFormAction', { method: 'POST', body: '{}' }).catch(e => ({ status: 'ERR' }));
+    document.getElementById('log').textContent += 'apply:' + r.status + '\n';
+  });
+</script>
+</body></html>

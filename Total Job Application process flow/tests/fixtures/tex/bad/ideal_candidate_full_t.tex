@@ -1,0 +1,166 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\bfseries\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}, itemsep=1pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt, parsep=0pt, topsep=1pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Mira Kaplan}} & Email : mkaplan@uchicago.edu \\
+  linkedin.com/in/mira-kaplan-cs & Mobile : +1-773-555-0148 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Chicago}{Chicago, IL}
+      {B.S. Computer Science; GPA: 3.94}{Sep. 2024 -- Jun. 2028}
+      \resumeItemListStart
+        \resumeItem{Coursework: Operating Systems, Computer Networks, Parallel Computing, Databases, Algorithms; Quantitative Portfolio Management and Algorithmic Trading (Financial Mathematics)}
+        \resumeItem{Teaching Assistant, Introduction to Computer Systems, 3 quarters \hfill \textbf{Graduating Jun. 2028; available May -- Aug. 2027, Chicago}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {IMC Trading}{Chicago, IL}
+      {Software Engineer Intern, Options Trading Technology}{Jan. 2031 -- {{CURRENT_MONTH}}}
+      \resumeItemListStart
+        \resumeItem{Built a validation framework — letting traders define their own guardrails on live option pricing model output, from a small expression language through evaluation and alert routing; shipped to production in week three and adopted by two desks.}
+        \resumeItem{Cut tick-to-quote latency --- 22\% on the equity options path by replacing a shared-mutex conflation buffer with a per-instrument single-producer ring, measured against a replayed 90-minute captured session rather than synthetic load.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Cboe Global Markets}{Chicago, IL}
+      {Software Engineer Intern, Market Data}{Jun. 2025 -- Aug. 2025}
+      \resumeItemListStart
+        \resumeItem{Built the capture and replay harness for a multicast options feed, persisting 4TB/day of raw packets with nanosecond hardware timestamps and replaying any window bit for bit for regression testing.}
+        \resumeItem{Turned a recurring gap-recovery incident into an automated pre-open check with the market operations team, closing a class of tickets they had been resolving by hand every week.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\newpage
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Column-Oriented Binary Format for Tick Data Capture}{}
+      {C++, Python C API}{Feb. 2026}
+      \resumeItemListStart
+        \resumeItem{Designed a column-oriented capture format for raw exchange messages with a Python C extension for zero-copy reads, cutting storage 11x and full-day query time from 40 minutes to under 3 across a 2B-message corpus.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Distributed Backtest Scheduler}{}
+      {Rust, Python, Kubernetes}{Apr. 2026}
+      \resumeItemListStart
+        \resumeItem{Built a scheduler fanning research backtests across a bare-metal pool with deterministic replay and content-addressed result caching, cutting a full parameter sweep from 6 hours to 25 minutes and making every rerun reproducible.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lock-Free Limit Order Book and Matching Engine}{}
+      {C++20, Lock-Free Data Structures}{Sep. 2025}
+      \resumeItemListStart
+        \resumeItem{Implemented price-time priority matching over a cache-aligned intrusive book fed by a single-producer ring buffer, sustaining 1M+ orders/sec at p99 under 800ns, validated against 10M+ replayed order events.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------------
+\section{Leadership \& Involvement}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UChicago Trading Competition}{Chicago, IL}
+      {Case Author and Technology Lead}{Sep. 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Wrote the market making case and built the simulated exchange it runs on, matching 300+ competitor algorithms over two days; coordinated engineers from four sponsoring proprietary trading firms as case reviewers.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: C++ (17/20), Python, Java, Rust, C\#, SQL} \\
+     \textbf{Systems}{: Lock-Free Concurrency, Cache-Aware Data Layout, UDP Multicast \& TCP, Low-Latency Data Pipelines, Distributed Systems} \\
+     \textbf{Tools}{: Linux, GDB, perf, CMake, Kafka, PostgreSQL, Kubernetes, Docker, Git}
+   }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Fixture: Ashby-like application</title>
+<style>
+  .ashby-application-form-input-yesno-option[aria-pressed=true]{background:#cde}
+  .ashby-application-form-input-autocomplete-popup-result{cursor:pointer;padding:2px 6px}
+  input[type=radio].ashby-application-form-input-radio-group-option-radio{position:absolute;opacity:0;width:1px;height:1px}
+  label.ashby-application-form-input-radio-group-option-label{cursor:pointer;display:block}
+  label.ashby-application-form-input-radio-group-option-label.checked{font-weight:bold}
+</style></head>
+<body>
+<h1>Software Engineering Intern @ Acme Space</h1>
+<div class="ashby-application-form-autofill-pane"><h3>Autofill from resume</h3><input type="file" id="autofill-input"><button>Upload file</button></div>
+<div id="app">
+  <div class="ashby-application-form-field-entry" data-field-path="_systemfield_name"><label class="required" for="_systemfield_name">Legal Name (First Name Last Name)</label><div><input name="_systemfield_name" required id="_systemfield_name" type="text" class="ashby-application-form-input-text"></div></div>
+  <div class="ashby-application-form-field-entry" data-field-path="_systemfield_email"><label class="required" for="_systemfield_email">Email</label><div><input name="_systemfield_email" required id="_systemfield_email" type="email"></div></div>
+  <div class="ashby-application-form-field-entry" data-field-path="p1"><label class="required" for="p1">Phone Number</label><div><input name="p1" required id="p1" type="text"></div></div>
+  <div class="ashby-application-form-field-entry" data-field-path="_systemfield_location"><label class="required" for="_systemfield_location">Where do you plan on working from?</label>
+    <div><input type="text" role="combobox" class="ashby-application-form-input-autocomplete" placeholder="Start typing..." required><div class="popup"></div></div></div>
+  <div class="ashby-application-form-field-entry" data-field-path="_systemfield_resume"><label class="required" for="_systemfield_resume">Resume</label>
+    <div role="presentation" class="ashby-application-form-input-file"><input accept="application/pdf" type="file" id="_systemfield_resume" style="opacity:0;width:1px"><button>Upload File</button><span class="uploaded"></span></div></div>
+  <div class="ashby-application-form-field-entry" data-field-path="li"><label for="li">LinkedIn Profile</label><div><input name="li" id="li" type="text"></div></div>
+  <div class="ashby-application-form-field-entry" data-field-path="essay"><label class="required" for="essay">Share a project you're especially proud of</label><div><textarea name="essay" id="essay" required></textarea></div></div>
+  <div class="ashby-application-form-field-entry" data-field-path="onsite"><label class="required" for="onsite">This role requires working in person at our office five days per week. Does this work for you?</label>
+    <div class="ashby-application-form-input-yesno"><button class="ashby-application-form-input-yesno-option" aria-pressed="false" data-option="yes">Yes</button><button class="ashby-application-form-input-yesno-option" aria-pressed="false" data-option="no">No</button></div></div>
+  <div data-field-path="auth"><fieldset class="ashby-application-form-input-radio-group"><label class="required" for="auth">Are you authorized to work in the U.S.?</label>
+    <div class="ashby-application-form-input-radio-group-option"><input type="radio" id="auth-r0" name="auth" class="ashby-application-form-input-radio-group-option-radio"><label for="auth-r0" class="ashby-application-form-input-radio-group-option-label">Yes</label></div>
+    <div class="ashby-application-form-input-radio-group-option"><input type="radio" id="auth-r1" name="auth" class="ashby-application-form-input-radio-group-option-radio"><label for="auth-r1" class="ashby-application-form-input-radio-group-option-label">No</label></div></fieldset></div>
+  <div data-field-path="itar"><fieldset class="ashby-application-form-input-radio-group"><label class="required" for="itar">To assist us in assessing export compliance (ITAR), please identify which statement best applies to you:</label>
+    <div class="ashby-application-form-input-radio-group-option"><input type="radio" id="itar-r0" name="itar" class="ashby-application-form-input-radio-group-option-radio"><label for="itar-r0" class="ashby-application-form-input-radio-group-option-label">A United States citizen or national</label></div>
+    <div class="ashby-application-form-input-radio-group-option"><input type="radio" id="itar-r1" name="itar" class="ashby-application-form-input-radio-group-option-radio"><label for="itar-r1" class="ashby-application-form-input-radio-group-option-label">A person lawfully admitted for permanent residence of the United States (i.e. "Green Card" holder)</label></div>
+    <div class="ashby-application-form-input-radio-group-option"><input type="radio" id="itar-r2" name="itar" class="ashby-application-form-input-radio-group-option-radio"><label for="itar-r2" class="ashby-application-form-input-radio-group-option-label">None of the Above</label></div></fieldset></div>
+  <div data-field-path="_systemfield_eeoc_gender"><fieldset class="ashby-application-form-input-radio-group"><label for="_systemfield_eeoc_gender">Gender</label>
+    <div class="ashby-application-form-input-radio-group-option"><input type="radio" id="g-r0" name="g" class="ashby-application-form-input-radio-group-option-radio"><label for="g-r0" class="ashby-application-form-input-radio-group-option-label">Male</label></div>
+    <div class="ashby-application-form-input-radio-group-option"><input type="radio" id="g-r1" name="g" class="ashby-application-form-input-radio-group-option-radio"><label for="g-r1" class="ashby-application-form-input-radio-group-option-label">Female</label></div>
+    <div class="ashby-application-form-input-radio-group-option"><input type="radio" id="g-r2" name="g" class="ashby-application-form-input-radio-group-option-radio"><label for="g-r2" class="ashby-application-form-input-radio-group-option-label">Decline to self-identify</label></div></fieldset></div>
+  <div class="ashby-application-form-field-entry" data-field-path="texting"><label for="texting">Check Yes or No to indicate your agreement to receive text message updates.</label>
+    <div class="ashby-application-form-input-yesno"><button class="ashby-application-form-input-yesno-option" aria-pressed="false" data-option="yes">Yes - I consent to receiving text messages</button><button class="ashby-application-form-input-yesno-option" aria-pressed="false" data-option="no">No - I do not consent</button></div></div>
+  <button class="ashby-application-form-submit-button">Submit Application</button>
+</div>
+<pre id="log"></pre>
+<script>
+  document.querySelectorAll('.ashby-application-form-input-yesno').forEach(g => g.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    const was = b.getAttribute('aria-pressed') === 'true'; g.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', 'false')); if (!was) b.setAttribute('aria-pressed', 'true'); })));  // like Ashby: a pressed button clicked again clears
+  document.querySelectorAll('input[type=radio]').forEach(r => r.addEventListener('change', () => {
+    document.querySelectorAll(`label[for]`).forEach(l => { if (document.getElementById(l.htmlFor) && document.getElementById(l.htmlFor).name === r.name) l.classList.toggle('checked', document.getElementById(l.htmlFor).checked); }); }));
+  const LOCS = ['Springfield, Illinois, United States', 'Springfield, Oklahoma, United States', 'Orland, California, United States'];
+  const loc = document.querySelector('[data-field-path=_systemfield_location] input'), popup = document.querySelector('[data-field-path=_systemfield_location] .popup');
+  loc.addEventListener('input', () => { popup.innerHTML = ''; const q = loc.value.toLowerCase().split(',')[0]; if (q.length < 2) return;
+    setTimeout(() => { LOCS.filter(l => l.toLowerCase().includes(q)).forEach(l => { const d = document.createElement('div'); d.className = 'ashby-application-form-input-autocomplete-popup-result'; d.setAttribute('role', 'option'); d.textContent = l;
+      d.addEventListener('click', () => { loc.value = l; popup.innerHTML = ''; }); popup.appendChild(d); }); }, 300); });
+  document.getElementById('_systemfield_resume').addEventListener('change', e => { document.querySelector('.uploaded').textContent = e.target.files[0].name; });
+  document.querySelector('.ashby-application-form-submit-button').addEventListener('click', async () => {
+    const r = await fetch('/api/non-user-graphql?op=ApiSubmitSingleApplicationFormAction', { method: 'POST', body: '{}' }).catch(() => ({ status: 'ERR' }));
+    document.getElementById('log').textContent += 'submit:' + r.status + '\n'; });
+</script>
+</body></html>

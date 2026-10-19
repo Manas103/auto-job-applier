@@ -1,0 +1,4 @@
+Flight Software Intern
+
+Responsibilities: write flight software in C++.
+Qualifications: must be a U.S. person as defined by ITAR (citizen or permanent resident). Graduating December 2027 or later.

@@ -1,0 +1,69 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Fixture: Lever-like apply page</title>
+<style>.dropdown-results div{cursor:pointer;padding:2px 6px}.hidden{display:none}</style></head>
+<body>
+<h2>Submit your application</h2>
+<form id="application-form" enctype="multipart/form-data" method="POST">
+  <li class="application-question"><label><div class="application-label">Resume/CV ✱</div>
+    <div class="application-field"><a class="postings-btn"><span class="filename"></span><span class="default-label">ATTACH RESUME/CV</span>
+      <input class="application-file-input invisible-resume-upload" data-qa="input-resume" id="resume-upload-input" name="resume" tabindex="-1" type="file" style="opacity:0;width:1px;height:1px"></a>
+      <span class="resume-upload-success hidden"><div class="resume-upload-label">Success!</div></span></div></label></li>
+  <li class="application-question"><label><div class="application-label">Full name ✱</div><div class="application-field"><input type="text" data-qa="name-input" name="name" required></div></label></li>
+  <li class="application-question"><label><div class="application-label">Email ✱</div><div class="application-field"><input name="email" type="email" required></div></label></li>
+  <li class="application-question"><label><div class="application-label">Phone ✱</div><div class="application-field"><input type="text" name="phone" required></div></label></li>
+  <li class="application-question"><label><div class="application-label">Current location ✱</div><div class="application-field">
+    <input class="location-input" id="location-input" type="text" maxlength="100" name="location" required>
+    <input id="selected-location" type="hidden" name="selectedLocation">
+    <div class="dropdown-container"><div class="dropdown-results"></div></div></div></label></li>
+  <li class="application-question"><label><div class="application-label">Current company ✱</div><div class="application-field"><input type="text" name="org" required></div></label></li>
+  <li class="application-question"><label><div class="application-label">LinkedIn URL</div><div class="application-field"><input type="text" name="urls[LinkedIn]"></div></label></li>
+  <li class="application-question"><label><div class="application-label">GitHub URL</div><div class="application-field"><input type="text" name="urls[GitHub]"></div></label></li>
+  <li class="application-question"><label><div class="application-label">Twitter URL</div><div class="application-field"><input type="text" name="urls[Twitter]"></div></label></li>
+  <div class="section application-form"><h4>Internship Questions</h4>
+    <input type="hidden" value="{&quot;text&quot;:&quot;Internship Questions&quot;,&quot;fields&quot;:[{&quot;type&quot;:&quot;dropdown&quot;,&quot;text&quot;:&quot;Are you legally authorized to work in the United States for any company?&quot;,&quot;required&quot;:true,&quot;id&quot;:&quot;a1&quot;,&quot;options&quot;:[{&quot;text&quot;:&quot;Yes&quot;},{&quot;text&quot;:&quot;No&quot;}]},{&quot;type&quot;:&quot;multiple-choice&quot;,&quot;text&quot;:&quot;Do you now, or will you in the future, require sponsorship for employment visa status?&quot;,&quot;required&quot;:true,&quot;id&quot;:&quot;a2&quot;,&quot;options&quot;:[{&quot;text&quot;:&quot;Yes&quot;},{&quot;text&quot;:&quot;No&quot;}]},{&quot;type&quot;:&quot;multiple-select&quot;,&quot;text&quot;:&quot;Undergrad Discipline(s)&quot;,&quot;required&quot;:true,&quot;id&quot;:&quot;a3&quot;,&quot;options&quot;:[{&quot;text&quot;:&quot;Mathematics&quot;},{&quot;text&quot;:&quot;Computer Science&quot;},{&quot;text&quot;:&quot;Physics&quot;}]},{&quot;type&quot;:&quot;textarea&quot;,&quot;text&quot;:&quot;What is your GPA?&quot;,&quot;required&quot;:true,&quot;id&quot;:&quot;a4&quot;},{&quot;type&quot;:&quot;textarea&quot;,&quot;text&quot;:&quot;Why do you want to work at Xcimer?&quot;,&quot;required&quot;:true,&quot;id&quot;:&quot;a5&quot;}]}" name="cards[c1][baseTemplate]">
+    <ul>
+      <li class="application-question custom-question"><div class="application-label dropdown"><div class="text">Are you legally authorized to work in the United States for any company?<span class="required">✱</span></div></div>
+        <div class="application-field"><div class="application-dropdown"><select name="cards[c1][field0]" required><option value="">Select...</option><option value="Yes">Yes</option><option value="No">No</option></select></div></div></li>
+      <li class="application-question custom-question"><div class="application-label multiple-choice"><div class="text">Do you now, or will you in the future, require sponsorship for employment visa status?<span class="required">✱</span></div></div>
+        <div class="application-field"><ul data-qa="multiple-choice"><li><label><input type="radio" name="cards[c1][field1]" value="Yes" required><span class="application-answer-alternative">Yes</span></label></li><li><label><input type="radio" name="cards[c1][field1]" value="No" required><span class="application-answer-alternative">No</span></label></li></ul></div></li>
+      <li class="application-question custom-question"><div class="application-label multiple-select"><div class="text">Undergrad Discipline(s)<span class="required">✱</span></div></div>
+        <div class="application-field"><ul data-qa="checkboxes"><li><label><input type="checkbox" name="cards[c1][field2]" value="Mathematics"><span>Mathematics</span></label></li><li><label><input type="checkbox" name="cards[c1][field2]" value="Computer Science"><span>Computer Science</span></label></li><li><label><input type="checkbox" name="cards[c1][field2]" value="Physics"><span>Physics</span></label></li></ul></div></li>
+      <li class="application-question custom-question"><div class="application-label"><div class="text">What is your GPA?<span class="required">✱</span></div></div><div class="application-field"><textarea class="card-field-input" name="cards[c1][field3]"></textarea></div></li>
+      <li class="application-question custom-question"><div class="application-label"><div class="text">Why do you want to work at Xcimer?<span class="required">✱</span></div></div><div class="application-field"><textarea class="card-field-input" name="cards[c1][field4]"></textarea></div></li>
+    </ul>
+  </div>
+  <div class="section eeo-section"><h4>U.S. Equal Employment Opportunity information</h4>
+    <div class="application-question"><label><div class="application-label">Gender</div><div class="application-field"><div class="application-dropdown"><select name="eeo[gender]"><option value="">Select ...</option><option value="Male">Male</option><option value="Female">Female</option><option value="Decline to self-identify">Decline to self-identify</option></select></div></div></label></div>
+    <div class="application-question"><label><div class="application-label">Veteran status</div><div class="application-field"><div class="application-dropdown"><select name="eeo[veteran]"><option value="">Select ...</option><option value="I am a Protected Veteran">I identify as one or more of the classifications of protected veteran listed above</option><option value="I am not a Protected Veteran">I am not a protected veteran</option><option value="Decline to self-identify">I decline to self-identify for protected veteran status</option></select></div></div></label></div>
+    <div class="application-question"><label><div class="application-label">Disability status</div><div class="application-field"><div class="application-dropdown"><select id="disabilitySelectElement" name="eeo[disability]"><option value="">Select ...</option><option value="Yes, I have a disability, or have had one in the past">Yes, I have a disability, or have had one in the past</option><option value="No, I do not have a disability and have not had one in the past">No, I do not have a disability and have not had one in the past</option><option value="I do not want to answer ">I do not want to answer</option></select></div></div></label></div>
+    <div id="disabilitySignatureSection"><div class="application-question"><label><div class="application-label">Name</div><div class="application-field"><input type="text" name="eeo[disabilitySignature]" placeholder="Enter your full name"></div></label></div>
+    <div class="application-question"><label><div class="application-label">Date</div><div class="application-field"><input type="text" name="eeo[disabilitySignatureDate]" placeholder="MM/DD/YYYY"></div></label></div></div>
+  </div>
+  <input type="hidden" name="h-captcha-response" id="hcaptchaResponseInput" value="">
+  <button id="hcaptchaSubmitBtn" type="submit" class="hidden"></button>
+  <div class="section last-section-apply"><button id="btn-submit" type="button" class="postings-btn template-btn-submit" data-qa="btn-submit">Submit application</button></div>
+</form>
+<pre id="log"></pre>
+<script>
+  const LOCS = ['Springfield, Illinois, United States', 'Springfield, Oklahoma, United States', 'Springfield, Kentucky, United States'];
+  const li = document.getElementById('location-input'), res = document.querySelector('.dropdown-results'), sel = document.getElementById('selected-location');
+  li.addEventListener('input', () => {
+    res.innerHTML = ''; sel.value = '';
+    const q = li.value.toLowerCase().split(',')[0];
+    if (q.length < 2) return;
+    setTimeout(() => { LOCS.filter(l => l.toLowerCase().includes(q)).forEach(l => {
+      const d = document.createElement('div'); d.textContent = l;
+      d.addEventListener('click', () => { li.value = l; sel.value = JSON.stringify({name: l}); res.innerHTML = ''; });
+      res.appendChild(d); }); }, 300);
+  });
+  document.getElementById('resume-upload-input').addEventListener('change', e => {
+    const f = e.target.files[0]; document.querySelector('.filename').textContent = f.name;
+    setTimeout(() => { document.querySelector('.resume-upload-success').classList.remove('hidden');
+      // the parser fills untouched fields
+      const n = document.querySelector('[name=name]'); if (!n.value) n.value = 'Parsed Name'; }, 400);
+  });
+  const send = async () => { const r = await fetch('/xcimer/c1/apply', { method: 'POST', body: new FormData(document.getElementById('application-form')) }).catch(() => ({ status: 'ERR' })); document.getElementById('log').textContent += 'apply:' + r.status + '\n'; };
+  document.getElementById('btn-submit').addEventListener('click', send);
+  document.getElementById('application-form').addEventListener('submit', e => { e.preventDefault(); send(); });
+</script>
+</body></html>

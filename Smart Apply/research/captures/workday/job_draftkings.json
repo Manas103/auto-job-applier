@@ -1,0 +1,62 @@
+{
+ "jobPostingInfo": {
+  "id": "a034ae601a601000b5f10ab0d29f0000",
+  "title": "Analyst Intern (Summer 2027)",
+  "jobDescription": "<p><span>At DraftKings, AI is becoming an integral part of both our present and future, powering how work gets done today, guiding smarter decisions, and sparking bold ideas. It\u2019s transforming how we enhance customer experiences, streamline operations, and unlock new possibilities. Our teams are energized by innovation and readily embrace emerging technology. We\u2019re not waiting for the future to arrive. We\u2019re shaping it, one bold step at a time. To those who see AI as a driver of progress, come build the future together.</span></p><p></p><h2><span>The Crown Is Yours</span></h2><p></p><p><span>As an Analytics Intern, you&#39;ll dive into real data with real impact. During our 10-week summer program, you&#39;ll work alongside the Analytics Team to uncover insights that shape how we build products and serve our customers. From running experiments to building dashboards, you&#39;ll sharpen your analytical skills on meaningful projects that influence business decisions. It&#39;s hands-on, high-impact work in a fast-paced environment where data drives every move.</span><br /><br /><b>What You&#39;ll Do</b></p><ul><li>Transform complex, high-volume data into clear, actionable insights that drive business performance.</li><li>Build and scale experiments that inform product and customer strategy.</li><li>Simplify complex analytical concepts into digestible frameworks for decision-making.</li><li>Measure and analyze the impact of new features, campaigns, or site changes on customer behavior.</li><li>Own the development and automation of reporting dashboards for tracking key business results.</li><li>Deliver insights and recommendations to cross-functional stakeholders and senior leaders with clarity and impact.</li><li>Partner with global teammates at all levels, from other interns to seasoned experts, to align on goals, priorities, and execution.</li></ul><p><br /><b>What You&#39;ll Bring</b></p><ul><li>Currently enrolled in a four-year university or college, pursuing a Bachelor\u2019s Degree in Mathematics, Data Science, Engineering, Economics, Business, or a related field.</li><li>Familiarity with SQL, Python, R, SAS, or similar programming languages used for data analysis.</li><li>A strong grasp of statistics and hypothesis testing, with exposure to model-building considered a plus.</li><li>Proven ability to uncover insights from data and clearly communicate findings to stakeholders.</li><li>A curiosity-driven mindset with a desire to grow in a fast-paced, data-focused environment.</li></ul><p style=\"text-align:inherit\"></p><h2><span>Join Our Team</span></h2><p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><span>We\u2019re a publicly traded (NASDAQ: DKNG) technology company headquartered in Boston. As a regulated gaming company, you may be required to obtain a gaming license issued by the appropriate state agency as a condition of employment. Don\u2019t worry, we\u2019ll guide you through the process if this is relevant to your role.</span></p><p style=\"text-align:inherit\"></p>",
+  "location": "Boston, MA",
+  "postedOn": "Posted 24 Days Ago",
+  "startDate": "2026-08-31",
+  "timeType": "Full time",
+  "jobReqId": "JR14926",
+  "jobPostingId": "Analyst-Intern--Summer-2027-_JR14926",
+  "jobPostingSiteId": "Campus_Career_Portal",
+  "country": {
+   "descriptor": "United States of America",
+   "id": "bc33aa3152ec42d4995f4791a106ed09"
+  },
+  "canApply": true,
+  "posted": true,
+  "includeResumeParsing": true,
+  "jobRequisitionLocation": {
+   "descriptor": "Boston, MA",
+   "country": {
+    "descriptor": "United States of America",
+    "id": "bc33aa3152ec42d4995f4791a106ed09",
+    "alpha2Code": "US"
+   }
+  },
+  "externalUrl": "https://draftkings.wd1.myworkdayjobs.com/Campus_Career_Portal/job/Boston-MA/Analyst-Intern--Summer-2027-_JR14926",
+  "questionnaireId": "aaa1230c5e451001fb45868cbfee0000"
+ },
+ "hiringOrganization": {
+  "name": "DK Crown Holdings Inc.",
+  "url": ""
+ },
+ "similarJobs": [
+  {
+   "title": "Analyst Intern (Summer 2027)",
+   "externalPath": "/job/Boston-MA/Analyst-Intern--Summer-2027-_JR14927",
+   "timeType": "Full time",
+   "locationsText": "Boston, MA",
+   "postedOn": "Posted 24 Days Ago",
+   "startDate": "2026-08-31"
+  },
+  {
+   "title": "Analyst Intern (Summer 2027)",
+   "externalPath": "/job/Boston-MA/Analyst-Intern--Summer-2027-_JR15148",
+   "timeType": "Full time",
+   "locationsText": "Boston, MA",
+   "postedOn": "Posted 8 Days Ago",
+   "startDate": "2026-09-16"
+  },
+  {
+   "title": "Analyst Intern (Summer 2027)",
+   "externalPath": "/job/Boston-MA/Analyst-Intern--Summer-2027-_JR15147",
+   "timeType": "Full time",
+   "locationsText": "Boston, MA",
+   "postedOn": "Posted 8 Days Ago",
+   "startDate": "2026-09-16"
+  }
+ ],
+ "userAuthenticated": false
+}

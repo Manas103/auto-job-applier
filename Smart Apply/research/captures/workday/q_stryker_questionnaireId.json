@@ -1,0 +1,261 @@
+{
+ "id": "1cb4084dfe92100104c36ff098780000",
+ "questions": [
+  {
+   "id": "1cb4084dfe92100104c3738bde9d0005",
+   "body": "Have you in the past or are you currently involved with the FIRST Robotics program?",
+   "order": "k",
+   "possibleAnswers": [
+    {
+     "id": "fe0d85f15d6d01c747ab5437f74887bd",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "fe0d85f15d6d01fcc8b95437f74888bd",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": false,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "1cb4084dfe92100104c3738bde9d0001",
+   "body": "Have you met with a Stryker representative at a recruiting event on a college or university campus?",
+   "order": "j",
+   "possibleAnswers": [
+    {
+     "id": "fe0d85f15d6d017babd1a90df74822bc",
+     "branchingQuestion": {
+      "id": "1cb4084dfe92100104c3738bde9d0003",
+      "body": "Which college or university?",
+      "order": "j.a",
+      "required": false,
+      "type": {
+       "id": "c4d9bd57996c100025ab7d7f5aed0046",
+       "descriptor": "Text"
+      }
+     },
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "fe0d85f15d6d0159f0dda90df74823bc",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "1cb4084dfe92100104c372f1f66a0006",
+   "body": "Are you currently in process of completing your Bachelors or Masters Degree?",
+   "order": "i",
+   "possibleAnswers": [
+    {
+     "id": "134a1d802880019d0373b75241141879",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "134a1d802880018d497ab75241141979",
+     "answerText": "No",
+     "order": "b",
+     "score": -2
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "1cb4084dfe92100104c372f1f66a0005",
+   "body": "What is your current cumulative GPA?",
+   "order": "h",
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c100025ab7d7f5aed0046",
+    "descriptor": "Text"
+   }
+  },
+  {
+   "id": "1cb4084dfe92100104c372f1f66a0002",
+   "body": "Is your current cumulative GPA 3.0 or above? (Please convert to a 4.0 scale)",
+   "order": "g",
+   "possibleAnswers": [
+    {
+     "id": "134a1d802880018fdbd3e45141144f78",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "134a1d80288001d124dde45141145078",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "1cb4084dfe92100104c3725842d80008",
+   "body": "Are you bound by any confidentiality, non-disclosure, non-compete or patent agreements or any other employment agreements or obligations limiting your work or requiring you to obtain approvals from or assign intellectual property to a current or former employer?",
+   "order": "f",
+   "possibleAnswers": [
+    {
+     "id": "134a1d80288001892dfee75141145378",
+     "answerText": "Yes",
+     "order": "a",
+     "score": 1
+    },
+    {
+     "id": "134a1d8028800143ac06e85141145478",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "1cb4084dfe92100104c3725842d80005",
+   "body": "Are any of your immediate family members practicing health care professionals or government officials that may use or purchase Stryker products?",
+   "order": "e",
+   "possibleAnswers": [
+    {
+     "id": "fe0d85f15d6d01600b6b94edf648ceba",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "fe0d85f15d6d0118f17794edf648cfba",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "1cb4084dfe92100104c3725842d80002",
+   "body": "Are you 18 years or older? If you are under 18, hire is subject to verification that you are of minimum and legal age",
+   "order": "d",
+   "possibleAnswers": [
+    {
+     "id": "134a1d8028800177b397ef5141145b78",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "134a1d8028800168c0b4ef5141145c78",
+     "answerText": "No",
+     "order": "b",
+     "score": -2
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "1cb4084dfe92100104c371be9f000005",
+   "body": "Do you currently hold a Visa (including a student visa)?",
+   "order": "c",
+   "possibleAnswers": [
+    {
+     "id": "fe0d85f15d6d01799a0866daf648a1b9",
+     "answerText": "Yes",
+     "order": "a",
+     "score": -2
+    },
+    {
+     "id": "fe0d85f15d6d019d2f3166daf648a2b9",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "1cb4084dfe92100104c371be9f000002",
+   "body": "Will you now or in the future require sponsorship from Stryker to continue to work in the country in which the job is located?",
+   "order": "b",
+   "possibleAnswers": [
+    {
+     "id": "134a1d8028800179ac54f35141145f78",
+     "answerText": "Yes",
+     "order": "a",
+     "score": -2
+    },
+    {
+     "id": "134a1d8028800134505df35141146078",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "1cb4084dfe92100104c37124e6830000",
+   "body": "Are you legally authorized to work in the country in which the job is located?",
+   "order": "a",
+   "possibleAnswers": [
+    {
+     "id": "134a1d8028800138d579165241148178",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "134a1d80288001ff0081165241148278",
+     "answerText": "No",
+     "order": "b",
+     "score": -2
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "1cb4084dfe92100104c3738bde9d0003",
+   "body": "Which college or university?",
+   "order": "j.a",
+   "required": false,
+   "type": {
+    "id": "c4d9bd57996c100025ab7d7f5aed0046",
+    "descriptor": "Text"
+   }
+  }
+ ]
+}

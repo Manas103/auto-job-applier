@@ -1,0 +1,27 @@
+{
+  "pipeline_dashboard": "http://127.0.0.1:8765",
+  "archon_env": "mail.env",
+  "dashboard": {
+    "host": "127.0.0.1",
+    "port": 8770
+  },
+  "chrome": {
+    "exe": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "max_tabs": 6
+  },
+  "claude": {
+    "cmd": [
+      "claude"
+    ],
+    "answers_model": "claude-opus-5-5",
+    "agent_model": "claude-sonnet-5",
+    "max_budget_usd": null
+  },
+  "batch": {
+    "size": 5
+  },
+  "log_level": "INFO",
+  "notify": {
+    "enabled": false
+  }
+}

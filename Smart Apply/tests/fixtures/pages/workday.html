@@ -1,0 +1,245 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Fixture: Workday-like apply flow</title>
+<style>
+  .hidden { display: none; }
+  .spin { width: 0.1px; opacity: 1; border: 0; padding: 0; }
+  [role=listbox] { border: 1px solid #999; }
+  #click_filter { position: absolute; left: 0; top: 0; width: 200px; height: 40px; }
+  .btnwrap { position: relative; width: 200px; height: 40px; }
+</style></head>
+<body>
+<!-- Mirrors the live Workday DOM measured on Stryker and Amgen (2026-09-25): every field in a
+     div[data-automation-id="formField-<name>"] with data-fkit-id="<row>--<name>"; dropdowns are
+     button[aria-haspopup=listbox] opening a [role=listbox] that stays in the DOM (hidden) after closing;
+     prompts are multiselectInputContainer + input[placeholder=Search] that only search on Enter; dates are
+     0.1px spinbuttons behind a -display div; the sign-in submit sits under a click_filter overlay. -->
+<div data-automation-id="legalNotice"><button type="submit" data-automation-id="legalNoticeAcceptButton">Accept Cookies</button></div>
+<ol data-automation-id="progressBar"><li data-automation-id="progressBarActiveStep" id="step">current step 1 of 6 Create Account/Sign In</li></ol>
+
+<!-- 1. account -->
+<div id="p_account" data-automation-id="signInContent">
+  <h3 id="acct_title">Create Account</h3>
+  <form data-automation-id="signInFormo" onsubmit="return false">
+    <div data-automation-id="formField-email"><label>Email Address*</label><input type="text" data-automation-id="email"></div>
+    <div data-automation-id="formField-password"><label>Password*</label><input type="password" data-automation-id="password"></div>
+    <div data-automation-id="formField-verifyPassword" id="vp"><label>Verify New Password*</label><input type="password" data-automation-id="verifyPassword"></div>
+    <div data-automation-id="noCaptchaWrapper" class="btnwrap">
+      <div role="button" aria-label="Submit" data-automation-id="click_filter" id="click_filter"></div>
+      <button type="submit" data-automation-id="createAccountSubmitButton" id="createBtn" tabindex="-2" aria-hidden="true">Create Account</button>
+      <button type="submit" data-automation-id="signInSubmitButton" id="signInBtn" class="hidden" tabindex="-2" aria-hidden="true">Sign In</button>
+    </div>
+    <button type="submit" data-automation-id="signInLink" id="signInLink">Sign In</button>
+    <button type="submit" data-automation-id="createAccountLink" id="createLink" class="hidden">Create Account</button>
+    <input data-automation-id="beecatcher" name="website" type="text" style="width:1px;height:0;opacity:0" aria-hidden="true">
+  </form>
+  <div id="authErr" role="alert" class="hidden"></div>
+</div>
+
+<!-- 2. my information -->
+<div id="p_info" data-automation-id="applyFlowMyInfoPage" class="hidden">
+  <div data-automation-id="formField-source"><label for="source--source">How Did You Hear About Us?*</label>
+    <button aria-haspopup="listbox" type="button" id="source--source" class="dd" data-options="Select One|Job Board|LinkedIn|Other">Select One</button></div>
+  <div data-automation-id="formField-candidateIsPreviousWorker"><fieldset><legend><label>Have you worked for Acme before?*</label></legend>
+    <input id="pw_y" type="radio" name="candidateIsPreviousWorker" value="true"><label for="pw_y">Yes</label>
+    <input id="pw_n" type="radio" name="candidateIsPreviousWorker" value="false"><label for="pw_n">No</label></fieldset></div>
+  <div data-automation-id="formField-country"><label>Country*</label><button aria-haspopup="listbox" type="button" id="country--country" class="dd" data-options="Select One|Canada|United States of America">United States of America</button></div>
+  <div data-automation-id="formField-legalName--firstName"><label>First Name*</label><input type="text" id="name--legalName--firstName"></div>
+  <div data-automation-id="formField-legalName--lastName"><label>Last Name*</label><input type="text" id="name--legalName--lastName"></div>
+  <div data-automation-id="formField-addressLine1"><label>Address Line 1</label><input type="text" id="address--addressLine1"></div>
+  <div data-automation-id="formField-city"><label>City</label><input type="text" id="address--city"></div>
+  <div data-automation-id="formField-countryRegion"><label>State</label><button aria-haspopup="listbox" type="button" id="address--countryRegion" class="dd" data-options="Select One|Illinois|Georgia">Select One</button></div>
+  <div data-automation-id="formField-postalCode"><label>Postal Code</label><input type="text" id="address--postalCode"></div>
+  <div data-automation-id="formField-phoneType"><label>Phone Device Type*</label><button aria-haspopup="listbox" type="button" id="phoneNumber--phoneType" class="dd" data-options="Select One|Home|Mobile">Select One</button></div>
+  <div data-automation-id="formField-countryPhoneCode"><label>Country Phone Code*</label>
+    <div data-automation-id="multiSelectContainer"><div data-automation-id="multiselectInputContainer"><input placeholder="Search" enterkeyhint="search" class="prompt" data-options="Canada (+1)|United States of America (+1)|Japan (+81)"></div>
+    <ul data-automation-id="selectedItemList"><li data-automation-id="selectedItem" role="option">United States of America (+1)<span data-automation-id="DELETE_charm"></span></li></ul></div></div>
+  <div data-automation-id="formField-phoneNumber"><label>Phone Number*</label><input type="text" id="phoneNumber--phoneNumber"></div>
+</div>
+
+<!-- 3. my experience -->
+<div id="p_exp" data-automation-id="applyFlowMyExpPage" class="hidden">
+  <div role="group" aria-labelledby="h_we"><h4 id="h_we">Work Experience</h4><div id="we_rows"></div><button type="button" data-automation-id="add-button" data-section="workExperience">Add</button></div>
+  <div role="group" aria-labelledby="h_edu"><h4 id="h_edu">Education</h4><div id="edu_rows">
+    <!-- a tenant default first row without a Delete button -->
+    <div role="group" aria-label="Education 1">
+      <div data-automation-id="formField-schoolName" data-fkit-id="education-1--schoolName"><label>School or University*</label><input type="text" id="education-1--schoolName"></div>
+      <div data-automation-id="formField-degree" data-fkit-id="education-1--degree"><label>Degree*</label><button aria-haspopup="listbox" type="button" id="education-1--degree" class="dd" data-options="Select One|High School|Bachelor's Degree|Master's Degree">Select One</button></div>
+      <div data-automation-id="formField-fieldOfStudy" data-fkit-id="education-1--fieldOfStudy"><label>Field of Study</label>
+        <div data-automation-id="multiSelectContainer"><div data-automation-id="multiselectInputContainer"><input placeholder="Search" enterkeyhint="search" class="prompt" data-tree="1" data-options="Computer and Information Sciences|Computer Engineering|Mathematics"></div><ul data-automation-id="selectedItemList"></ul></div></div>
+      <div data-automation-id="formField-gradeAverage" data-fkit-id="education-1--gradeAverage"><label>Overall Result (GPA)</label><input type="text" id="education-1--gradeAverage"></div>
+    </div></div><button type="button" data-automation-id="add-button" data-section="education">Add Another</button></div>
+  <div role="group" aria-labelledby="h_res"><h4 id="h_res">Resume/CV</h4>
+    <div data-automation-id="formField-"><label>Upload a file (5MB max)*</label><input type="file" data-automation-id="file-upload-input-ref" id="resume">
+    <div data-automation-id="file-upload-successful" id="uploaded" class="hidden">Successfully Uploaded!</div></div></div>
+  <div role="group" aria-labelledby="h_web"><h4 id="h_web">Websites</h4><div id="web_rows"></div><button type="button" data-automation-id="add-button" data-section="webAddress">Add</button></div>
+  <div role="group" aria-labelledby="h_soc"><h4 id="h_soc">Social Network URLs</h4>
+    <div data-automation-id="formField-linkedInAccount" data-fkit-id="socialNetworkAccounts--linkedInAccount"><label>Please provide your LinkedIn profile:</label><input type="text" id="socialNetworkAccounts--linkedInAccount"></div></div>
+</div>
+
+<!-- 4. questions -->
+<div id="p_q" data-automation-id="applyFlowPrimaryQuestionsPage" class="hidden">
+  <div data-automation-id="formField-q1"><div data-automation-id="richText">Are you legally authorized to work in the country in which the job is located?*</div>
+    <button aria-haspopup="listbox" type="button" id="primaryQuestionnaire--q1" class="dd" data-options="Select One|Yes|No">Select One</button></div>
+  <div data-automation-id="formField-q2"><div data-automation-id="richText">Will you now or in the future require sponsorship?*</div>
+    <button aria-haspopup="listbox" type="button" id="primaryQuestionnaire--q2" class="dd" data-options="Select One|Yes|No">Select One</button></div>
+  <div data-automation-id="formField-q3"><label for="primaryQuestionnaire--q3">What is your current cumulative GPA?*</label><textarea id="primaryQuestionnaire--q3"></textarea></div>
+  <div data-automation-id="formField-q4"><label>What is your projected graduation date?*</label>
+    <div id="primaryQuestionnaire--q4" data-automation-id="dateInputWrapper" role="group">
+      <div data-automation-id="dateSectionMonth-display" class="disp">MM</div><input role="spinbutton" class="spin" data-automation-id="dateSectionMonth-input" aria-label="Month">
+      <div data-automation-id="dateSectionDay-display" class="disp">DD</div><input role="spinbutton" class="spin" data-automation-id="dateSectionDay-input" aria-label="Day">
+      <div data-automation-id="dateSectionYear-display" class="disp">YYYY</div><input role="spinbutton" class="spin" data-automation-id="dateSectionYear-input" aria-label="Year"></div></div>
+  <div data-automation-id="formField-q5"><div data-automation-id="richText">Which of these apply? (select all)</div>
+    <div id="primaryQuestionnaire--q5" role="group"><input id="q5a" type="checkbox"><label for="q5a">Summer / Internship</label><input id="q5b" type="checkbox"><label for="q5b">Full-Time</label></div></div>
+</div>
+
+<!-- 5. voluntary disclosures -->
+<div id="p_vd" data-automation-id="applyFlowVoluntaryDisclosuresPage" class="hidden">
+  <div data-automation-id="formField-ethnicity"><label>Please select the ethnicity which most accurately describes how you identify yourself.*</label>
+    <button aria-haspopup="listbox" type="button" id="personalInfoUS--ethnicity" class="dd" data-options="Select One|Asian (United States of America)|Not Specified (United States of America)">Select One</button></div>
+  <div data-automation-id="formField-gender"><label>Please select your gender.*</label>
+    <button aria-haspopup="listbox" type="button" id="personalInfoUS--gender" class="dd" data-options="Select One|Female|Male|Not Declared">Select One</button></div>
+  <div data-automation-id="formField-veteranStatus"><label>Protected veteran status*</label>
+    <button aria-haspopup="listbox" type="button" id="personalInfoUS--veteranStatus" class="dd" data-options="Select One|I am a protected veteran|I am not a protected veteran|I don't wish to answer">Select One</button></div>
+  <div data-automation-id="formField-acceptTermsAndAgreements"><input id="terms" type="checkbox"><label for="terms">Yes, I have read and consent to the terms and conditions*</label></div>
+</div>
+
+<!-- 6. review -->
+<div id="p_rev" data-automation-id="applyFlowReviewPage" class="hidden"><h3>Review</h3><div id="review_text"></div></div>
+
+<div data-automation-id="pageFooter" id="footer" class="hidden">
+  <button type="submit" data-automation-id="pageFooterBackButton" id="back">Back</button>
+  <button type="submit" data-automation-id="pageFooterNextButton" id="next">Save and Continue</button>
+</div>
+<pre id="log"></pre>
+<div id="lbhost"></div>
+
+<script>
+  // ---- state
+  let step = 1; const names = ['Create Account/Sign In', 'My Information', 'My Experience', 'Application Questions', 'Voluntary Disclosures', 'Review'];
+  const pages = ['p_account', 'p_info', 'p_exp', 'p_q', 'p_vd', 'p_rev'];
+  const accounts = {};          // email -> password (server side)
+  let signedIn = false, applicationId = null;
+  const log = (t) => { document.getElementById('log').textContent += t + '\n'; };
+  const render = () => {
+    pages.forEach((id, i) => document.getElementById(id).classList.toggle('hidden', i !== step - 1));
+    document.getElementById('step').textContent = `current step ${step} of 6 ${names[step - 1]}`;
+    document.getElementById('footer').classList.toggle('hidden', step === 1);
+    document.getElementById('next').textContent = step === 6 ? 'Submit' : 'Save and Continue';
+    if (step === 6) document.getElementById('review_text').textContent = 'Review: ' + JSON.stringify(collect());
+  };
+  document.querySelector('[data-automation-id=legalNoticeAcceptButton]').addEventListener('click', (e) => { e.preventDefault(); e.target.parentElement.remove(); });
+
+  // ---- account
+  const authErr = (t) => { const a = document.getElementById('authErr'); a.textContent = t; a.classList.toggle('hidden', !t); };
+  const showSignIn = (on) => {
+    document.getElementById('acct_title').textContent = on ? 'Sign In' : 'Create Account';
+    document.getElementById('vp').classList.toggle('hidden', on);
+    document.getElementById('createBtn').classList.toggle('hidden', on); document.getElementById('signInBtn').classList.toggle('hidden', !on);
+    document.getElementById('signInLink').classList.toggle('hidden', on); document.getElementById('createLink').classList.toggle('hidden', !on);
+    authErr('');
+  };
+  document.getElementById('signInLink').addEventListener('click', (e) => { e.preventDefault(); showSignIn(true); });
+  document.getElementById('createLink').addEventListener('click', (e) => { e.preventDefault(); showSignIn(false); });
+  const authSubmit = () => {
+    const email = document.querySelector('[data-automation-id=email]').value, pw = document.querySelector('[data-automation-id=password]').value;
+    if (document.querySelector('[data-automation-id=beecatcher]').value) { authErr('robot'); return; }
+    const creating = !document.getElementById('vp').classList.contains('hidden');
+    if (creating) {
+      if (accounts[email]) { authErr('An account with this email already exists.'); return; }
+      if (pw !== document.querySelector('[data-automation-id=verifyPassword]').value || pw.length < 8) { authErr('Password rules violation'); return; }
+      accounts[email] = pw;
+    } else if (accounts[email] !== pw) { authErr('You may have entered the wrong email address or password or your account might be locked.'); return; }
+    signedIn = true;
+    fetch('/wday/cxs/t/jobpostings/1/jobapplications', { method: 'POST', body: '{}' }).then(r => r.json()).catch(() => ({}));
+    applicationId = 'app-1'; step = 2; render();
+  };
+  // the overlay forwards a real click to the covered button, which submits the form (a submit event, like Workday)
+  document.getElementById('click_filter').addEventListener('click', () => { const f = document.querySelector('[data-automation-id=signInFormo]'); const btn = document.getElementById('vp').classList.contains('hidden') ? document.getElementById('signInBtn') : document.getElementById('createBtn'); f.requestSubmit(btn); });
+  document.querySelector('[data-automation-id=signInFormo]').addEventListener('submit', (e) => { e.preventDefault(); if (e.submitter && /account|sign in/i.test(e.submitter.textContent)) authSubmit(); });
+
+  // ---- dropdowns: the listbox stays in the DOM (hidden) after closing, like Workday
+  document.addEventListener('click', (e) => {
+    const b = e.target.closest('button.dd'); if (!b) return;
+    const host = document.getElementById('lbhost'); [...host.children].forEach(c => c.classList.add('hidden'));
+    const lb = document.createElement('ul'); lb.setAttribute('role', 'listbox');
+    b.dataset.options.split('|').forEach(o => { const li = document.createElement('li'); li.setAttribute('role', 'option'); li.textContent = o;
+      li.addEventListener('click', () => { b.textContent = o; b.value = o; lb.classList.add('hidden'); }); lb.appendChild(li); });
+    host.appendChild(lb);
+  });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') [...document.getElementById('lbhost').children].forEach(c => c.classList.add('hidden')); });
+
+  // ---- prompts: typing shows the category tree; Enter searches; clicking a leaf selects it
+  document.addEventListener('input', (e) => {
+    const inp = e.target; if (!inp.classList.contains('prompt')) return;
+    showPrompt(inp, inp.dataset.tree ? ['Partial List (First 500 Entries)', 'All'] : inp.dataset.options.split('|').filter(o => o.toLowerCase().includes(inp.value.toLowerCase())));
+  });
+  document.addEventListener('keydown', (e) => {
+    const inp = e.target; if (e.key !== 'Enter' || !inp.classList || !inp.classList.contains('prompt')) return;
+    e.preventDefault(); log('prompt-search:' + inp.value);
+    showPrompt(inp, inp.dataset.options.split('|').filter(o => o.toLowerCase().includes(inp.value.split(' ')[0].toLowerCase())));
+  });
+  function showPrompt(inp, options) {
+    let pop = inp.closest('[data-automation-id=multiSelectContainer]').querySelector('.pop');
+    if (!pop) { pop = document.createElement('div'); pop.className = 'pop'; inp.closest('[data-automation-id=multiSelectContainer]').appendChild(pop); }
+    pop.innerHTML = '';
+    options.forEach(o => { const d = document.createElement('div'); d.setAttribute('data-automation-id', 'promptOption'); d.textContent = o;
+      d.addEventListener('click', () => { if (/partial list|^all$/i.test(o)) return; const ul = inp.closest('[data-automation-id=multiSelectContainer]').querySelector('[data-automation-id=selectedItemList]');
+        ul.innerHTML = ''; const li = document.createElement('li'); li.setAttribute('data-automation-id', 'selectedItem'); li.setAttribute('role', 'option'); li.textContent = o; ul.appendChild(li); inp.value = ''; pop.innerHTML = ''; });
+      pop.appendChild(d); });
+  }
+  document.addEventListener('click', (e) => { const c = e.target.closest('[data-automation-id=DELETE_charm]'); if (c) c.parentElement.remove(); });
+
+  // ---- dates: click the display to focus the 0.1px spinbutton; digits move on automatically
+  document.addEventListener('click', (e) => { const d = e.target.closest('.disp'); if (d) d.nextElementSibling.focus(); });
+  document.addEventListener('input', (e) => {
+    const s = e.target; if (s.getAttribute('role') !== 'spinbutton') return;
+    const max = s.getAttribute('aria-label') === 'Year' ? 4 : 2; s.previousElementSibling.textContent = s.value.padStart(max, '0');
+    if (s.value.length >= max) { const wrap = s.closest('[data-automation-id=dateInputWrapper]'); const all = [...wrap.querySelectorAll('input')]; const i = all.indexOf(s); if (all[i + 1]) all[i + 1].focus(); }
+  });
+
+  // ---- repeating rows with data-fkit-id, Delete buttons on added rows only
+  let rowSeq = 10;
+  const rowTemplates = {
+    workExperience: (n) => `<div role="group" aria-label="Work Experience ${n}"><h5>Work Experience ${n}</h5><button type="button" class="del">Delete</button>
+      <div data-automation-id="formField-jobTitle" data-fkit-id="workExperience-${n}--jobTitle"><label>Job Title*</label><input type="text"></div>
+      <div data-automation-id="formField-companyName" data-fkit-id="workExperience-${n}--companyName"><label>Company*</label><input type="text"></div>
+      <div data-automation-id="formField-location" data-fkit-id="workExperience-${n}--location"><label>Location</label><input type="text"></div>
+      <div data-automation-id="formField-currentlyWorkHere" data-fkit-id="workExperience-${n}--currentlyWorkHere"><input id="cwh${n}" type="checkbox"><label for="cwh${n}">I currently work here</label></div>
+      <div data-automation-id="formField-startDate" data-fkit-id="workExperience-${n}--startDate"><label>From*</label><div data-automation-id="dateInputWrapper" role="group"><div data-automation-id="dateSectionMonth-display" class="disp">MM</div><input role="spinbutton" class="spin" data-automation-id="dateSectionMonth-input" aria-label="Month"><div data-automation-id="dateSectionYear-display" class="disp">YYYY</div><input role="spinbutton" class="spin" data-automation-id="dateSectionYear-input" aria-label="Year"></div></div>
+      <div data-automation-id="formField-endDate" data-fkit-id="workExperience-${n}--endDate"><label>To*</label><div data-automation-id="dateInputWrapper" role="group"><div data-automation-id="dateSectionMonth-display" class="disp">MM</div><input role="spinbutton" class="spin" data-automation-id="dateSectionMonth-input" aria-label="Month"><div data-automation-id="dateSectionYear-display" class="disp">YYYY</div><input role="spinbutton" class="spin" data-automation-id="dateSectionYear-input" aria-label="Year"></div></div>
+      <div data-automation-id="formField-roleDescription" data-fkit-id="workExperience-${n}--roleDescription"><label>Role Description</label><textarea></textarea></div></div>`,
+    education: (n) => `<div role="group" aria-label="Education ${n}"><h5>Education ${n}</h5><button type="button" class="del">Delete</button>
+      <div data-automation-id="formField-schoolName" data-fkit-id="education-${n}--schoolName"><label>School or University*</label><input type="text"></div>
+      <div data-automation-id="formField-degree" data-fkit-id="education-${n}--degree"><label>Degree*</label><button aria-haspopup="listbox" type="button" class="dd" data-options="Select One|High School|Bachelor's Degree|Master's Degree">Select One</button></div></div>`,
+    webAddress: (n) => `<div role="group" aria-label="Websites ${n}"><h5>Websites ${n}</h5><button type="button" class="del">Delete</button>
+      <div data-automation-id="formField-url" data-fkit-id="webAddress-${n}--url"><label>URL*</label><input type="text"></div></div>`,
+  };
+  document.addEventListener('click', (e) => {
+    const add = e.target.closest('[data-automation-id=add-button]');
+    if (add) { const sec = add.dataset.section; const host = add.parentElement.querySelector('div[id$="_rows"]'); const n = ++rowSeq; const tmp = document.createElement('div'); tmp.innerHTML = rowTemplates[sec](n); host.appendChild(tmp.firstElementChild); add.textContent = 'Add Another'; }
+    const del = e.target.closest('button.del'); if (del) del.closest('[role=group]').remove();
+  });
+  document.getElementById('resume').addEventListener('change', () => document.getElementById('uploaded').classList.remove('hidden'));
+  // like Workday: "I currently work here" hides the To date
+  document.addEventListener('change', (e) => { const cb = e.target; if (cb.type === 'checkbox' && cb.closest('[data-automation-id=formField-currentlyWorkHere]')) { const row = cb.closest('[role=group]'); const to = row.querySelector('[data-automation-id=formField-endDate]'); if (to) to.classList.toggle('hidden', cb.checked); } });
+
+  // ---- navigation: Save and Continue posts an intermediate save (must pass the guard); Submit posts finalize
+  const collect = () => { const out = {}; document.querySelectorAll('[data-automation-id^="formField-"]').forEach(w => { const k = w.getAttribute('data-fkit-id') || w.getAttribute('data-automation-id'); const c = w.querySelector('input:not([type=file]):not([type=checkbox]):not([type=radio]), textarea, button.dd'); const ck = w.querySelector('input:checked'); const sel = w.querySelector('[data-automation-id=selectedItem]'); out[k] = sel ? sel.textContent : (ck ? (ck.labels[0] ? ck.labels[0].textContent : ck.value) : (c ? (c.value || c.textContent) : '')); }); return out; };
+  const requiredMissing = () => { const page = document.getElementById(pages[step - 1]); const miss = []; page.querySelectorAll('[data-automation-id^="formField-"]').forEach(w => { const lab = w.querySelector('label, [data-automation-id=richText]'); if (!lab || !/\*/.test(lab.textContent)) return; const c = w.querySelector('input:not([type=file]):not([type=checkbox]):not([type=radio]), textarea, button.dd'); const dd = w.querySelector('button.dd'); const ck = w.querySelector('input:checked'); const sel = w.querySelector('[data-automation-id=selectedItem]'); const empty = dd ? /select one/i.test(dd.textContent) : (sel ? false : (ck ? false : (c ? !c.value : (!w.querySelector('[data-automation-id=file-upload-successful]:not(.hidden)'))))); if (empty && !w.querySelector('[role=spinbutton]')) miss.push(w); }); return miss; };
+  document.getElementById('next').addEventListener('click', async (e) => {
+    e.preventDefault();
+    if (step < 6) {
+      document.querySelectorAll('.err').forEach(x => x.remove());
+      const miss = requiredMissing();
+      if (miss.length) { miss.forEach(w => { const p = document.createElement('p'); p.className = 'err'; p.textContent = 'Error: The field is required and must have a value.'; w.appendChild(p); }); return; }
+      await fetch('/wday/cxs/t/jobapplication/app-1/' + ['', 'name', 'experience', 'questions', 'disclosures'][step - 1], { method: 'POST', body: '{}' });
+      step++; render();
+    } else {
+      const r = await fetch('/wday/cxs/t/jobapplication/app-1/finalize', { method: 'POST', body: '{}' }).catch(() => ({ status: 'ERR' }));
+      log('finalize:' + r.status);
+    }
+  });
+  document.getElementById('back').addEventListener('click', (e) => { e.preventDefault(); if (step > 2) { step--; render(); } });
+  render();
+</script>
+</body></html>

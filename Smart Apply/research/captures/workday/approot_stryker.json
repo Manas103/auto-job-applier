@@ -1,0 +1,2259 @@
+{
+ "applyWithProfile": {
+  "linkedIn": {
+   "serviceAPIKey": "771epsh7lgl1v9",
+   "gadgetServerBaseURL": "https://applywithlinkedin.myworkdaygadgets.com",
+   "integrationContextId": "urn:li:organization:3282",
+   "requireCookieAcceptance": false
+  },
+  "seek": {
+   "hirerId": "seekAnz:organization:seek:2tYeo6MEw"
+  }
+ },
+ "analytics": {
+  "googleUniversalAnalyticsID": "G-PL1PG5PE0D",
+  "pixelTrackingURLConfigurations": [
+   {
+    "url": "https://d.hodes.com/i?tv=pixel_tracker&aid=stryker&p=web&e=se&se_ca=conversion&se_ac=Apply_Complete&se_pr=CandidateNumber&se_la=RequisitionContestNumber"
+   },
+   {
+    "url": "https://px.ads.linkedin.com/collect/?pid=1042540&conversionId=837220&fmt=gif"
+   },
+   {
+    "url": "https://px.ads.linkedin.com/collect/?pid=3440649&fmt=gif"
+   },
+   {
+    "url": "https://www.applytracking.com/x.aspx?track=kM3ziPEkH%2fzKIbfs7pXLdzVPIciCiwn4oGxaZycynN0%3d"
+   },
+   {
+    "url": "https://www.linkedin.com/company/stryker/"
+   },
+   {
+    "url": "https://conv.indeed.com/pagead/conv/1757132439403383/?script=0"
+   },
+   {
+    "url": "https://www.glassdoor.com/Overview/Working-at-Stryker-EI_IE1918.11,18.htm"
+   },
+   {
+    "url": "https://www.facebook.com/strykercareers/"
+   },
+   {
+    "url": "https://click.appcast.io/workday-9k/a17.png?ent=34&e=8000&t=1553567120386"
+   },
+   {
+    "url": "https://jsv3.recruitics.com/48c27bef-65fc-11e9-a8d1-d71de866f34e.gif"
+   },
+   {
+    "url": "https://www.strykercareersblog.com/"
+   },
+   {
+    "url": "https://www.instagram.com/strykercareers"
+   },
+   {
+    "url": "https://twitter.com/Stryker_Jobs"
+   },
+   {
+    "url": "https://www.themuse.com/partners/application/stryker"
+   },
+   {
+    "url": "https://www.athletenetwork.com/partner/349/landing"
+   },
+   {
+    "url": "https://www.military.com/veteran-employers/stryker"
+   }
+  ]
+ },
+ "brandingData": {
+  "formFields": {
+   "color": "#B2B4AE",
+   "textColor": "#85458A"
+  },
+  "progressBar": {
+   "color": "#85458A"
+  },
+  "button": {
+   "primary": {
+    "color": "#FFB500",
+    "borderColor": "#FFB500",
+    "textColor": "#000000",
+    "hover": {
+     "color": "#85458A",
+     "borderColor": "#85458A",
+     "textColor": "#FFFFFF"
+    }
+   },
+   "secondary": {
+    "color": "#FFB500",
+    "borderColor": "#FFB500",
+    "textColor": "#000000",
+    "hover": {
+     "color": "#85458A",
+     "borderColor": "#85458A",
+     "textColor": "#FFFFFF"
+    }
+   },
+   "shape": "SQUARE"
+  },
+  "header": {
+   "imageBanner": {
+    "maintainAspectRatio": true,
+    "image": {
+     "id": "617e56c2f4150140f90de79e5101f2c6",
+     "altText": null
+    }
+   },
+   "banner": {
+    "color": "#FFFFFF",
+    "borderColor": "#FFB500",
+    "textColor": "#85458A",
+    "image": {
+     "id": "a24347b7d9d201dcde9b185751017bca",
+     "altText": null
+    }
+   }
+  },
+  "embedded": false
+ },
+ "chatbotConfiguration": {
+  "paradoxWidgetToken": null
+ },
+ "configuredText": {
+  "countryCustomLabel": "Country",
+  "applyConfirmationMessage": "<p><span><span><span><span><span><span><span><span><span><span><span>Thank you for applying to Stryker!</span></span></span></span></span></span></span></span></span></span></span></p>",
+  "countryPhoneCodeCustomLabel": "Country Phone Code"
+ },
+ "consentConfiguration": {
+  "consentConfigurationVendor": {
+   "id": "9de36ec94084100013e8560e84170000",
+   "descriptor": "Workday"
+  },
+  "oneTrustUrl": null
+ },
+ "facets": [
+  "Location_Country",
+  "Location_Region_State_Province",
+  "primaryLocation",
+  "jobFamilyGroup",
+  "workerSubType",
+  "timeType"
+ ],
+ "featureFlags": {
+  "specialties": false,
+  "preferredName": true,
+  "embedMode": false,
+  "useAlternateCountryLabel": false,
+  "hideSearchForJobs": true,
+  "jobAlerts": false,
+  "excludeSiteIndexing": false,
+  "introduceYourself": false,
+  "militarySkillsMapper": false,
+  "skillsCloud": true,
+  "requireCandidateAccounts": true,
+  "candidateAccounts": true,
+  "accountVerification": false
+ },
+ "footer": {
+  "socialLinksList": [
+   {
+    "label": "YouTube",
+    "uri": "https://www.youtube.com/user/stryker"
+   },
+   {
+    "label": "Twitter",
+    "uri": "https://twitter.com/Stryker_Jobs"
+   },
+   {
+    "label": "LinkedIn",
+    "uri": "https://www.linkedin.com/company/stryker"
+   },
+   {
+    "label": "Facebook",
+    "uri": "https://www.facebook.com/strykercareers"
+   },
+   {
+    "label": "Glassdoor",
+    "uri": "https://www.glassdoor.com/Overview/Working-at-Stryker-EI_IE1918.11,18.htm"
+   }
+  ],
+  "privacyPolicy": {
+   "label": null,
+   "uri": null
+  }
+ },
+ "header": {
+  "homePageURL": "https://stryker.wd1.myworkdayjobs.com/StrykerCareers",
+  "homeLinkText": "View All Jobs",
+  "imageBannerUri": "/StrykerCareers/assets/banner",
+  "logoUri": "/StrykerCareers/assets/logo",
+  "cookieBanner": {
+   "message": "<h1><b><span><span><span><span><span><span><span><span><span><span><span><span>We use cookies to measure and improve your experience while accessing this site.\u00a0</span></span></span></span></span></span></span></span></span></span></span></span></b><b><span><span><span><span><span><span><span><span><span><span><span><span>Please indicate if you agree to the use of cookies.\u00a0</span></span></span></span></span></span></span></span></span></span></span></span></b><b><span><span><span><span><span><span><span><span><span><span><span><span>If you decline, cookies will not be tracked for you. </span></span></span></span></span></span></span></span></span></span></span></span></b><b><span><span><span><span><span><span><span><span><span><span><span><span>You may read further about our use of cookies in the <a href=\"https://www.stryker.com/content/stryker/us/en/legal/privacy.html\" target=\"_blank\">Stryker privacy statement</a>.</span></span></span></span></span></span></span></span></span></span></span></span></b></h1>",
+   "policy": "EVERYWHERE"
+  }
+ },
+ "languages": [
+  {
+   "descriptor": "Deutsch (Deutschland)",
+   "languageCode": "de_DE"
+  },
+  {
+   "descriptor": "English",
+   "languageCode": "en_US"
+  },
+  {
+   "descriptor": "Espa\u00f1ol",
+   "languageCode": "es"
+  },
+  {
+   "descriptor": "Fran\u00e7ais (France)",
+   "languageCode": "fr_FR"
+  },
+  {
+   "descriptor": "Italiano (Italia)",
+   "languageCode": "it_IT"
+  },
+  {
+   "descriptor": "Polski (Polska)",
+   "languageCode": "pl_PL"
+  },
+  {
+   "descriptor": "Portugu\u00eas (Brasil)",
+   "languageCode": "pt_BR"
+  },
+  {
+   "descriptor": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
+   "languageCode": "tr_TR"
+  },
+  {
+   "descriptor": "\u65e5\u672c\u8a9e (\u65e5\u672c)",
+   "languageCode": "ja_JP"
+  },
+  {
+   "descriptor": "\u7b80\u4f53\u4e2d\u6587 (\u4e2d\u56fd)",
+   "languageCode": "zh_CN"
+  },
+  {
+   "descriptor": "\ud55c\uad6d\uc5b4 (\ub300\ud55c\ubbfc\uad6d)",
+   "languageCode": "ko_KR"
+  }
+ ],
+ "mlEnabled": false,
+ "personalInfoConfiguration": {
+  "nonUsConfiguration": [
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69b722446c11de98360015c5e6daf6",
+     "descriptor": "Afghanistan"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "c042c84b26171000037f4e57f0740013",
+     "descriptor": "\u00c5land Islands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "ba6c8036f6bd417e864eb268ba95dda1",
+     "descriptor": "Albania"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "9e616caff5b1480aab04f1ce22d7e7d4",
+     "descriptor": "Algeria"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "b878c3f6dbc9424ba98d1f6f4b9b9f42",
+     "descriptor": "American Samoa"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "cf44ed0367294d6f8b84921f21de4f6b",
+     "descriptor": "Andorra"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "cbbc8eb7876c4078b24cb222feb36a36",
+     "descriptor": "Angola"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "77e1c8549aa1457d8158ee4e5600fe85",
+     "descriptor": "Anguilla"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "e640182ae8bf43f18ddf62f67bebf199",
+     "descriptor": "Antigua and Barbuda"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "e42ad5eac46d4cc9b367ceaef42577c5",
+     "descriptor": "Argentina"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69b632446c11de98360015c5e6daf6",
+     "descriptor": "Armenia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "65aa3aa554fa46029cf8d2439a6fc1de",
+     "descriptor": "Aruba"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "d903bb3fedad45039383f6de334ad4db",
+     "descriptor": "Australia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "d004c0d1a6c84511ab048669fcdf9fd7",
+     "descriptor": "Austria"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69b812446c11de98360015c5e6daf6",
+     "descriptor": "Azerbaijan"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69b90c446c11de98360015c5e6daf6",
+     "descriptor": "Bahamas"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "01d8b98083af4f919601e5dba982afc4",
+     "descriptor": "Bahrain"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69b9fc446c11de98360015c5e6daf6",
+     "descriptor": "Bangladesh"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69baec446c11de98360015c5e6daf6",
+     "descriptor": "Barbados"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69bbdc446c11de98360015c5e6daf6",
+     "descriptor": "Belarus"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "a04ea128f43a42e59b1e6a19e8f0b374",
+     "descriptor": "Belgium"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "b1bfeb3ddca24aa5a693a444f069ef5e",
+     "descriptor": "Belize"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "beb6ea2b448f411399a9f5ed7a5d9559",
+     "descriptor": "Benin"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "fa7b4f891d1446858bc693997ae9ea53",
+     "descriptor": "Bermuda"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "5d1158278cd34cca98b60848bcba000c",
+     "descriptor": "Bhutan"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69bccc446c11de98360015c5e6daf6",
+     "descriptor": "Bolivia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "05e597838fa1100004890bb693bf0028",
+     "descriptor": "Bonaire, Sint Eustatius, and Saba"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "03d13abe000e4b15bb68d39a597d439d",
+     "descriptor": "Bosnia and Herzegovina"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69bdbc446c11de98360015c5e6daf6",
+     "descriptor": "Botswana"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "1a29bb1357b240ab99a2fa755cc87c0e",
+     "descriptor": "Brazil"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "25d7dc1cd0574be5aab09d9a974efd25",
+     "descriptor": "British Indian Ocean Territory"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "ab358b7aa9a542d38ace07c8e33cd99b",
+     "descriptor": "British Virgin Islands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "2ad7ee3e8b0641449c0c194deaa07d7b",
+     "descriptor": "Brunei"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "25f4875dc598484dbeee857eb2d81652",
+     "descriptor": "Bulgaria"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "abc0815fe49b436eb120465e46fdb8de",
+     "descriptor": "Burkina Faso"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69beac446c11de98360015c5e6daf6",
+     "descriptor": "Burundi"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "391dd8cd5c944e6891beb2e85db0b017",
+     "descriptor": "Cabo Verde"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69bf9c446c11de98360015c5e6daf6",
+     "descriptor": "Cambodia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "b579d21545a140c49418f0a3451a3160",
+     "descriptor": "Cameroon"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "a30a87ed25634629aa6c3958aa2b91ea",
+     "descriptor": "Canada"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "0d529527922d45b395033357baff01c6",
+     "descriptor": "Cayman Islands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "9acf3cc9dc114effb0ea25ca96569801",
+     "descriptor": "Central African Republic"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69c08c446c11de98360015c5e6daf6",
+     "descriptor": "Chad"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "53fe09ef12b9408682a1d2439823f2e0",
+     "descriptor": "Chile"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "6cb77610a8a543aea2d6bc10457e35d4",
+     "descriptor": "China"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "8bc81e17fb601000140a937c8f1b0024",
+     "descriptor": "Christmas Island"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "54bc21a931c7100004d6e007596a0014",
+     "descriptor": "Cocos (Keeling) Islands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "e8106cd6a3534f2dba6fdee2d41db89d",
+     "descriptor": "Colombia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "8bb3c45739e44b0f8b092fb4e044d847",
+     "descriptor": "Comoros"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69c17c446c11de98360015c5e6daf6",
+     "descriptor": "Congo"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69c26c446c11de98360015c5e6daf6",
+     "descriptor": "Congo, Democratic Republic of the"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "39d013df374b100004f169a87ac00000",
+     "descriptor": "Cook Islands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "99abe7e6bb3f4c108aebebf01a369ec5",
+     "descriptor": "Costa Rica"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "4bc79a4526e4459d93db166b02d214db",
+     "descriptor": "C\u00f4te d'Ivoire"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "1face6f426c14de9979a134697da0db3",
+     "descriptor": "Croatia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "a8aa361e8e2041dc824ac58994c063dc",
+     "descriptor": "Cuba"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "d5ca7c9c9bdd4bf093e269cdc7a8fd53",
+     "descriptor": "Cura\u00e7ao"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69c370446c11de98360015c5e6daf6",
+     "descriptor": "Cyprus"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "fc078443155c4ad294201ecf5a61a499",
+     "descriptor": "Czechia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "49ab063f422741e2aef271de00efeac8",
+     "descriptor": "Denmark"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "1d90441f8d54483d91c4075827f1c8c9",
+     "descriptor": "Djibouti"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "21988663ae3d41f5a2d31fca30016738",
+     "descriptor": "Dominica"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "cec6aab2cee74a53a21629cd61000ea5",
+     "descriptor": "Dominican Republic"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "2752bce253374948a6bad7ed2059e054",
+     "descriptor": "Ecuador"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "d865e83093ad42319653b08e61f7db49",
+     "descriptor": "Egypt"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "dc96653331d74bd0b01ae3b086bcbe21",
+     "descriptor": "El Salvador"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "252b80fcdbe9497bb671160665f74017",
+     "descriptor": "Equatorial Guinea"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "1635e1c9e1594ccf801c71aec699ffa8",
+     "descriptor": "Eritrea"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "038b0482bfea403abb61c9bcc3d7eb60",
+     "descriptor": "Estonia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "bbc94efce1eb471881e82f61629ac52d",
+     "descriptor": "Eswatini"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69c460446c11de98360015c5e6daf6",
+     "descriptor": "Ethiopia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "5463e42829be4572b9b1affbd92379f2",
+     "descriptor": "Falkland Islands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "a65e22d581b24a8b93de64cf706f966b",
+     "descriptor": "Faroe Islands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "7fab385ac9d842918c5d3c3315efdf18",
+     "descriptor": "Fiji"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "0afb2fa656da42e8bfb6d47bd24a26fa",
+     "descriptor": "Finland"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "54c5b6971ffb4bf0b116fe7651ec789a",
+     "descriptor": "France"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "8099cba25078418ab699ebd3715e8212",
+     "descriptor": "French Guiana"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "9063a23103a84782a487254397ce0402",
+     "descriptor": "French Polynesia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "e9fe5693760c4d458463d1731e53170f",
+     "descriptor": "Gabon"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "19648d7f3cad49faa7bfed2886342c88",
+     "descriptor": "Gambia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69c550446c11de98360015c5e6daf6",
+     "descriptor": "Georgia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "dcc5b7608d8644b3a93716604e78e995",
+     "descriptor": "Germany"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69c640446c11de98360015c5e6daf6",
+     "descriptor": "Ghana"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "a56cc9412af0420b8fc838411b8b7a10",
+     "descriptor": "Gibraltar"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "566388c1eb974c42bd9e3da4c2f57d60",
+     "descriptor": "Greece"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "3402fc802391476095d6d69f45ee4ffe",
+     "descriptor": "Greenland"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "3e0c122bcb164ef6a119415cb6047b2d",
+     "descriptor": "Grenada"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "136f854248924df1a0bfd17aaad279d9",
+     "descriptor": "Guadeloupe"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "3aad525d8d8f4cca81c249fa981c3e6f",
+     "descriptor": "Guam"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db3b4b80df0f4287b262e5564c10edfa",
+     "descriptor": "Guatemala"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "f4a9d72383514d55a1d54d5d899c9b52",
+     "descriptor": "Guernsey"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "3c78af008462418b9dfd789b3dd6169a",
+     "descriptor": "Guinea"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "affe39d368a14a4482d3b843b0ced359",
+     "descriptor": "Guinea-Bissau"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69c730446c11de98360015c5e6daf6",
+     "descriptor": "Guyana"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69c820446c11de98360015c5e6daf6",
+     "descriptor": "Haiti"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "9548a1332a4b42b6bcb07231bc8dc4ff",
+     "descriptor": "Holy See (Vatican City State)"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "95d28f232bd24d82994625af5f82def9",
+     "descriptor": "Honduras"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "d4afdeb461d446e4babd204bd102dba8",
+     "descriptor": "Hong Kong"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "9db257f5937e4421b2fac64eec6832f8",
+     "descriptor": "Hungary"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "373bf1e5c8004104bbf8c3d6ef86e068",
+     "descriptor": "Iceland"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "c4f78be1a8f14da0ab49ce1162348a5e",
+     "descriptor": "India"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "b31234dbcdda4da9ba8fa073c5944e36",
+     "descriptor": "Indonesia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69c906446c11de98360015c5e6daf6",
+     "descriptor": "Iran"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69ca00446c11de98360015c5e6daf6",
+     "descriptor": "Iraq"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "04a05835925f45b3a59406a2a6b72c8a",
+     "descriptor": "Ireland"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "640185328b864f9e80370f407a9bd42b",
+     "descriptor": "Isle of Man"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "084562884af243748dad7c84c304d89a",
+     "descriptor": "Israel"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "8cd04a563fd94da7b06857a79faaf815",
+     "descriptor": "Italy"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "053507c3bc8f45bfa843204336fd1bed",
+     "descriptor": "Jamaica"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "8b705da2becf43cfaccc091da0988ab2",
+     "descriptor": "Japan"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "a2e916c2e79d4bc8b9cb99b958ae7812",
+     "descriptor": "Jersey"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "809723fc85024f499ca856efcd8d6b34",
+     "descriptor": "Jordan"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69ebac446c11de98360015c5e6daf6",
+     "descriptor": "Kazakhstan"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "9e684fd7be1e469d9ee955a4c3b754be",
+     "descriptor": "Kenya"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "092f7f9149674078bc3930a129db54c1",
+     "descriptor": "Kiribati"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "710afe3b42ce44f8b995e1ff21ca0a3e",
+     "descriptor": "Korea, Democratic People's Republic of"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "7a5a2aadf9d34086a2bfbfd408bc28da",
+     "descriptor": "Korea, Republic of"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "345b23e4528c4432af57172241a5f5eb",
+     "descriptor": "Kosovo"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "eb2e6ec0f73c4b0e94c68396631332d6",
+     "descriptor": "Kuwait"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69cae6446c11de98360015c5e6daf6",
+     "descriptor": "Kyrgyzstan"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69cbe0446c11de98360015c5e6daf6",
+     "descriptor": "Laos"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "1c026f3b1b8640d8bdfcb95466663e4d",
+     "descriptor": "Latvia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "6dfdb00cf8554fb9aab9f4ef39f830e0",
+     "descriptor": "Lebanon"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "71721fb4d84c411e866565dd2cbe3221",
+     "descriptor": "Lesotho"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "bcc7eef96c714c2c9a98099bd6b7c421",
+     "descriptor": "Liberia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "7dc1c34a17ba49158bb1bc62ce9871df",
+     "descriptor": "Liechtenstein"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69ccc6446c11de98360015c5e6daf6",
+     "descriptor": "Libya"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "8a0328effd25491fb8e6a08801f08e94",
+     "descriptor": "Lithuania"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "328b82f597514643a7683a78fc67c3f1",
+     "descriptor": "Luxembourg"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "e57942a30d504032a60614936c726d5e",
+     "descriptor": "Macao"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69cea6446c11de98360015c5e6daf6",
+     "descriptor": "Madagascar"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69cf96446c11de98360015c5e6daf6",
+     "descriptor": "Malawi"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "972dc4ba8d454bc0b893ff84b1529077",
+     "descriptor": "Malaysia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "5fcbbbf4473143f2ad769b04cd1b2200",
+     "descriptor": "Maldives"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69d086446c11de98360015c5e6daf6",
+     "descriptor": "Mali"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "147c5b939d2f42f5be949af5ebe2499e",
+     "descriptor": "Malta"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "4dc991e043754be3b9b80e293f941a85",
+     "descriptor": "Marshall Islands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "6c1c7bac60a749729eb6c69201ff6a1d",
+     "descriptor": "Martinique"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "a759018ba6ac489d9f16c086b914e1b6",
+     "descriptor": "Mauritius"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69d176446c11de98360015c5e6daf6",
+     "descriptor": "Mauritania"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "b2878e75d48910000d6d3d971db7001f",
+     "descriptor": "Mayotte"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "e2adff9272454660ac4fdb56fc70bb51",
+     "descriptor": "Mexico"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "e56677d0d6cf430c853a8340475b8c19",
+     "descriptor": "Micronesia, Federated States of"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69d266446c11de98360015c5e6daf6",
+     "descriptor": "Moldova"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "acb641a3d0bd44f1bcbd2ffb19362c56",
+     "descriptor": "Monaco"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69d356446c11de98360015c5e6daf6",
+     "descriptor": "Mongolia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "ddcca9fb9f894e909c92bbf20945c7b5",
+     "descriptor": "Montenegro"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "209693801ef2100004cc62a242c50009",
+     "descriptor": "Montserrat"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "7aaca3f6fc774f16802a4df4718a5b53",
+     "descriptor": "Morocco"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "7f514f8f47894bc797c5772adbddbb25",
+     "descriptor": "Mozambique"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "8ae7375b330441989443b02b66699ff9",
+     "descriptor": "Myanmar"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69d446446c11de98360015c5e6daf6",
+     "descriptor": "Namibia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "d37d3a67bb0b435f8f873d145bf86dea",
+     "descriptor": "Nauru"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "96ff60d458734174895a1e037e1eab3c",
+     "descriptor": "Nepal"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "9696868b09c64d52a62ee13b052383cc",
+     "descriptor": "Netherlands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "fe03aa57fafb4cae903f62bab493fd10",
+     "descriptor": "New Caledonia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "55273a1b49934d97ae15342ef51f6b95",
+     "descriptor": "New Zealand"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "5f2a092396a6444ab45617cb1cbf50a8",
+     "descriptor": "Nicaragua"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "3f5b1e8fe7314d248cef031356a6731a",
+     "descriptor": "Niger"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69d536446c11de98360015c5e6daf6",
+     "descriptor": "Nigeria"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "0769909891a81000166d635379ec002b",
+     "descriptor": "Niue"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "efd9328924551000034ab2227b7f111c",
+     "descriptor": "Norfolk Island"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "8ae2f086207b45609d4594df97ea462e",
+     "descriptor": "Northern Mariana Islands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69cdc0446c11de98360015c5e6daf6",
+     "descriptor": "North Macedonia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "d07f8ca8625e4345b98a91d0558b872a",
+     "descriptor": "Norway"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "e8424552931249ba9c6c1d7706cdc01d",
+     "descriptor": "Oman"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "567ef1bd0cc84d4e83b98d0013008264",
+     "descriptor": "Pakistan"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "d94781c588764296894fee49241cdd2d",
+     "descriptor": "Palau"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "d078242ba2e0499bae16a89775488c25",
+     "descriptor": "State of Palestine"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "a390372e575c41ecb7240c51ce9067bd",
+     "descriptor": "Panama"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69d626446c11de98360015c5e6daf6",
+     "descriptor": "Papua New Guinea"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69d70c446c11de98360015c5e6daf6",
+     "descriptor": "Paraguay"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "0eb156ca580c4db786a7894bdaa77450",
+     "descriptor": "Peru"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "e56f1daf83e04bacae794ba5c5593560",
+     "descriptor": "Philippines"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "bdc3d280f6f6100001d378d172e60007",
+     "descriptor": "Pitcairn Islands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "131d5ac7e3ee4d7b962bdc96e498e412",
+     "descriptor": "Poland"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "2e8c5034deb045d49315417c347472ca",
+     "descriptor": "Portugal"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "0a076377c3d94bc1b4ed46b4e7d82a50",
+     "descriptor": "Puerto Rico"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "f5ff182c7fab406bbb110cc1f7e99064",
+     "descriptor": "Qatar"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "1d8fdd33fcc844c8aaacd3f646da6900",
+     "descriptor": "Reunion"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "f2e609fe92974a55a05fc1cdc2852122",
+     "descriptor": "Romania"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "026798f585c54d8d95bf6d6788611244",
+     "descriptor": "Russian Federation"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69d806446c11de98360015c5e6daf6",
+     "descriptor": "Rwanda"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "881527f6cec910000ba81e8dccf61127",
+     "descriptor": "Saint Barthelemy"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "27624417a2271000059e9f6dc1f7001b",
+     "descriptor": "Saint Helena, Ascension and Tristan da Cunha"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "ef7cb913be9f469ba82e85a54b5d2b9a",
+     "descriptor": "Saint Kitts and Nevis"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "ad4597e2234848fba02895c963cf93c6",
+     "descriptor": "Saint Lucia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "66b7082a21e510000961bb6d82b5002a",
+     "descriptor": "Saint Martin"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "95c155010daf100005ea541a4cb50012",
+     "descriptor": "Saint Pierre and Miquelon"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "ef1c73dce2ad400c923547ad18db316a",
+     "descriptor": "Saint Vincent and the Grenadines"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "efe864274101469cbc918452acd89479",
+     "descriptor": "Samoa"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "64485754739244de9b44fb826234f6c5",
+     "descriptor": "San Marino"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "feaafc06d32b4d75be967bfeb300ab22",
+     "descriptor": "Sao Tome and Principe"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "50423b5190ad49bb89e94cd58dfaad69",
+     "descriptor": "Saudi Arabia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69d8f6446c11de98360015c5e6daf6",
+     "descriptor": "Senegal"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "b3f8697442124d6aaeb752a13c1e8491",
+     "descriptor": "Serbia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "68b593b14e714a068f4d5e49362f722c",
+     "descriptor": "Seychelles"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "3346309c543f41498c5db4113213d108",
+     "descriptor": "Sierra Leone"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "80938777cac5440fab50d729f9634969",
+     "descriptor": "Singapore"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "ff018e0ece674ead8065ff5ea8d4e9a9",
+     "descriptor": "Sint Maarten"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "d2f29df0c90f4cea9e7d17f2ed8a86ad",
+     "descriptor": "Slovakia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69d9f0446c11de98360015c5e6daf6",
+     "descriptor": "Slovenia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "63616d6000c24afea1fc5e12e0e75a56",
+     "descriptor": "Solomon Islands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "a73aef95dbf74f41ac55315803d5766d",
+     "descriptor": "Somalia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "4db3c26940b944919b83612cc1193eed",
+     "descriptor": "South Africa"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "c43cf64e1a7e4cb3b5aea7788c9b31ca",
+     "descriptor": "South Sudan"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "bd34c524a6a04ae6915f5d96fa086199",
+     "descriptor": "Spain"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69e062446c11de98360015c5e6daf6",
+     "descriptor": "Sri Lanka"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69e152446c11de98360015c5e6daf6",
+     "descriptor": "Sudan"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "d70bb669e3ef4bfc8ebe25143441fd64",
+     "descriptor": "Suriname"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "0f234e35f6281000026e1e3884fc0006",
+     "descriptor": "Svalbard and Jan Mayen"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "6a800a4736884df5826858d435650f45",
+     "descriptor": "Sweden"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "187134fccb084a0ea9b4b95f23890dbe",
+     "descriptor": "Switzerland"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "aa9d5c445d5142029a16823497b87a68",
+     "descriptor": "Syria"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "a4e08b475d6a4176853c9d1cb9854e02",
+     "descriptor": "Taiwan"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69e238446c11de98360015c5e6daf6",
+     "descriptor": "Tajikistan"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69e332446c11de98360015c5e6daf6",
+     "descriptor": "Tanzania"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "873d0f604e3b458c990cb4d83a5c0f14",
+     "descriptor": "Thailand"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "fc309ed6d59e4053a8c7c86a63a79d36",
+     "descriptor": "Timor-Leste"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "ec9b9ded3f8d4f48a6e8e7b5d23ed474",
+     "descriptor": "Togo"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "155638d8780110000982f781db820016",
+     "descriptor": "Tokelau"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "0d0bf6e788b945a3bdedc74077459be5",
+     "descriptor": "Tonga"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69e418446c11de98360015c5e6daf6",
+     "descriptor": "Trinidad and Tobago"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69e508446c11de98360015c5e6daf6",
+     "descriptor": "Tunisia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "c2e3bac5bbbb47b29dfc6e8b56a1586e",
+     "descriptor": "T\u00fcrkiye"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69e602446c11de98360015c5e6daf6",
+     "descriptor": "Turkmenistan"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "79051765806d438fbc36583cc52ace3f",
+     "descriptor": "Turks and Caicos Islands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "f1dd6fe49618427a9193d285de77fb12",
+     "descriptor": "Tuvalu"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "35cd22632f7a48f6b547654f8146ee01",
+     "descriptor": "U. S. Virgin Islands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69e6f2446c11de98360015c5e6daf6",
+     "descriptor": "Uganda"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "a4051ef996ac40778d4c79e3f2dedfd2",
+     "descriptor": "Ukraine"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "7b4fa1f369bd4604ba3692682fcbe345",
+     "descriptor": "United Arab Emirates"
+    }
+   },
+   {
+    "title": "Gender & Fair Employment Regulations (Northern Ireland)",
+    "instructions": "<div><div><div><div><p>Please provide your gender and religion.\u00a0In addition to our Talent Acquisition Privacy Statement available on Stryker careers site, please note that according to the Fair Employment (Monitoring) Regulations (Northern Ireland) 1999 Stryker is obliged to provide the Equality Commission for Northern Ireland with anonymized data on our applicant\u00b4s and employee\u00b4s community background and sex. If you decide not to provide this \u00a0information we may have to make a determination based on information already supplied by you. This is known as the residuary method. We would encourage you to answer these questions. Your answers will be used by us to prepare and submit a monitoring return to the Equality Commission which we are legally required to submit. Your identity will be kept anonymous and your answers will be treated with the strictest confidence. We assure you that your answers will not be used by us to make any decisions affecting you, whether in a recruitment exercise or during the course of employment with us: your response to this question will be available only to a restricted group of HR administrative roles, excluding participants in your recruitment process. This process is a legal requirement and is compliant with the General Data Protection Regulation (GDPR).</p></div></div></div></div>",
+    "country": {
+     "id": "29247e57dbaf46fb855b224e03170bc7",
+     "descriptor": "United Kingdom"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "ee9363c5587947d6a429e7164ac708da",
+     "descriptor": "United States Minor Outlying Islands"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69b538446c11de98360015c5e6daf6",
+     "descriptor": "Uruguay"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69e7d8446c11de98360015c5e6daf6",
+     "descriptor": "Uzbekistan"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "c362953bc7c44b5ea627d8a68758eae7",
+     "descriptor": "Vanuatu"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "635d2e106177441f9100b9d8688fbb39",
+     "descriptor": "Venezuela"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69e8c8446c11de98360015c5e6daf6",
+     "descriptor": "Vietnam"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "19a1f2d27035100003d214db8e7b002d",
+     "descriptor": "Wallis and Futuna"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "4a4092d3044a440d9e75684949ea292f",
+     "descriptor": "Western Sahara"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "ccc4e356340b420ea0c0aef4ab536946",
+     "descriptor": "Yemen"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69e9b8446c11de98360015c5e6daf6",
+     "descriptor": "Zambia"
+    }
+   },
+   {
+    "title": "Gender",
+    "instructions": null,
+    "country": {
+     "id": "db69eabc446c11de98360015c5e6daf6",
+     "descriptor": "Zimbabwe"
+    }
+   }
+  ]
+ },
+ "recommendedJobsEnabled": true,
+ "tenantDefaultCountry": {
+  "id": "bc33aa3152ec42d4995f4791a106ed09",
+  "descriptor": "United States of America"
+ },
+ "toggles": [
+  "b9739002c86510002015dea9402c0000",
+  "36ce9cb779e5100019c1a5050b9a0000",
+  "32bccbf501f610002313c4ee6e9c0000",
+  "e702eb48468610000d6ad4a553cb0000",
+  "812c4a153c711000151c5ca11e310000",
+  "0d6ebcfdc39a10001bc8f95b3aac0000",
+  "43b4d9d7cb8e10000a703bad20420000",
+  "532bfa92863b100019ab08f4c04b0000",
+  "dac26076be8510002347bab78d5a0000",
+  "badb3f02bef210000e20c92ac0260000",
+  "e466d0b066ff10000c3605be74f10000",
+  "292c4bafc34210001a28e93bebcf0000",
+  "b3999fdcfb7310001ed650a18cc80000",
+  "e42e6d1d2524100010042528c43e0000",
+  "f45271d06fcd10001b2d8737149f0000",
+  "b8ce26d67ff9100014ec4b645b840000",
+  "bc9894c7142610001616fde6e0700000",
+  "6edcf8e6cd7f10001b1f86c9e3ef0000",
+  "a969fb8f4cfd10000ad4ba96cd820000",
+  "459bb3f1e4a9100014b8f73a20850000",
+  "ab2374beb65d10002c8233ca9b5a0000",
+  "13809c87a71610001b62b41c11800000",
+  "31177c86226910001079dc24b7110000",
+  "4706b65dd8ee100015f0034e1e480000",
+  "6c7d10abcf8e100015455f96664e0000",
+  "7d2bc1254b7d10000e2b5811864a0000",
+  "78b52d8385791000141adb10f19a0000",
+  "560b3d5bfd701000208972c8730e0000",
+  "158e13f2980210000e5f46c2d5ae0000",
+  "b6678cba4dbc10000a476842e3bb0000",
+  "2e8eb95af853100024f8c97124d40000",
+  "65f18e16aea0100010c0b34df7700000",
+  "96cc49ab4185100014c0824814050000",
+  "e4f054463fea1000274c8a0d22ad0000",
+  "466d58ad03691000185ddce1282a0000",
+  "75ecc5f3792b1000131d51fc86ab0000",
+  "bc814e895c1d10000d1fd3354f4b0000",
+  "258d1be19f40100013265e0888c90000",
+  "cdbf5f0a33931000115a15a023a40000",
+  "20ccbc6c60701000fafdc3dce74a0000",
+  "16593e8eb6ca10000935b558a50a0000",
+  "e1733537b151100014e202818e520000",
+  "db3fa9600f8810001798c5a6d2dd0000",
+  "1502396ba0ef1000103c22d48c570000",
+  "9c10810cc40b1000460d082ad8de0000",
+  "9c10810cc40b100045f3593f47b50000",
+  "6658d90adc4f100014da5605f7080000",
+  "195d457a6acb10001008bcba6e490000",
+  "7412d755467b1000466a75950f5a0000",
+  "1fda372a2c2310002fdb093b08500000",
+  "f2f032937a19100012902c59ea990000",
+  "10f7a56eb11c100024a6d65b625a0000",
+  "25e5d9d7d60010001a37bac5c8790000",
+  "e1fdcb592a641000290e46a2b10f0000",
+  "5054a9c1a3eb1000262607b170020000",
+  "2af7a0871946100029867d9279b30000"
+ ]
+}

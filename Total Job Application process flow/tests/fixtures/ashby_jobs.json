@@ -1,0 +1,9 @@
+{"jobs": [
+  {"id": "0a1b2c3d-4e5f-4a6b-8c7d-9e0f1a2b3c4d", "title": "Machine Learning Research Intern", "location": "San Francisco, CA",
+   "isListed": true, "isRemote": false, "jobUrl": "https://jobs.ashbyhq.com/ashbylabs/0a1b2c3d-4e5f-4a6b-8c7d-9e0f1a2b3c4d",
+   "applyUrl": "https://jobs.ashbyhq.com/ashbylabs/0a1b2c3d-4e5f-4a6b-8c7d-9e0f1a2b3c4d/application",
+   "descriptionPlain": "We are looking for a PhD student for summer 2027. Responsibilities: train models. Qualifications: PhD program.",
+   "descriptionHtml": "<p>We are looking for a PhD student for summer 2027.</p>", "publishedAt": "2026-08-01T00:00:00Z"},
+  {"id": "ffffffff-1111-4222-8333-444444444444", "title": "Hidden Intern", "location": "Remote", "isListed": false,
+   "jobUrl": "https://jobs.ashbyhq.com/ashbylabs/ffffffff-1111-4222-8333-444444444444", "descriptionPlain": "hidden"}
+]}

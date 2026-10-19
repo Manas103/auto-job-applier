@@ -1,0 +1,175 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+% PIPELINE TEMPLATE: realistic ideal candidate (Alex). Carries more content than the
+% full-ideal template (Open Source & Research section), so spacing is tighter:
+% topmargin -.8in / textheight +1.8in. Do not push topmargin past -1.0in (clips the name).
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.8in}
+\addtolength{\textheight}{1.8in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\bfseries\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}, itemsep=1pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt, parsep=0pt, topsep=1pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/alex-doe/}{\Large Alex Doe}} & Email : \href{mailto:alex.doe@example.com}{alex.doe@example.com}\\
+  \href{https://www.linkedin.com/in/alex-doe/}{linkedin.com/in/alex-doe} & Mobile : +1-555-010-0100 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {State University}{College Town, IL}
+      {Bachelor of Science in Computer Science;  GPA: 3.50}{Aug. 2024 -- May 2028}
+      \resumeItemListStart
+        \resumeItem{Coursework: COURSEWORK-FOR-THIS-ROLE \hfill \textbf{LOGISTICS-TAG-FOR-THIS-ROLE}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Acme Labs}{Austin, TX}
+      {Software Engineer Intern}{Feb. 2026 -- Jun. 2026}
+      \resumeItemListStart
+        \resumeItem{INTERNSHIP-BULLET-1}
+        \resumeItem{INTERNSHIP-BULLET-2}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {State University, Generative AI Lab}{College Town, IL}
+      {Undergraduate Research Assistant}{Jan. 2025 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{GENAI-LAB-BULLET}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {PROJECT-1-TITLE}{}
+      {PROJECT-1-STACK}{PROJECT-1-MONTH}
+      \resumeItemListStart
+        \resumeItem{PROJECT-1-BULLET}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {PROJECT-2-TITLE}{}
+      {PROJECT-2-STACK}{PROJECT-2-MONTH}
+      \resumeItemListStart
+        \resumeItem{PROJECT-2-BULLET}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {PROJECT-3-TITLE}{}
+      {PROJECT-3-STACK}{PROJECT-3-MONTH}
+      \resumeItemListStart
+        \resumeItem{PROJECT-3-BULLET}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------OPEN SOURCE & RESEARCH-----------------
+\section{Open Source \& Research}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {OpenProjectA and OpenProjectB}{}
+      {Open Source Contributor}{Feb. 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{OPEN-SOURCE-BULLET}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Independent Research}{}
+      {Solo-Authored, arXiv Preprint}{Jul. 2026}
+      \resumeItemListStart
+        \resumeItem{\textbf{PREPRINT-TITLE}: PREPRINT-BULLET}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: LANGUAGES-FOR-THIS-ROLE} \\
+     \textbf{SKILLS-CATEGORY-2-NAME}{: SKILLS-CATEGORY-2} \\
+     \textbf{Tools}{: TOOLS-FOR-THIS-ROLE}
+   }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

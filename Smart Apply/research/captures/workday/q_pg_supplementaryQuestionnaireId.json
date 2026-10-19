@@ -1,0 +1,171 @@
+{
+ "id": "227c5ed1ba291030f5716bda16c90000",
+ "questions": [
+  {
+   "id": "227c5ed1ba291030f5f400705b880008",
+   "body": "<p>P&amp;G develops leaders through depth and breadth experiences, and many management roles require geographic mobility at various points throughout a career. Are you willing to relocate if future career opportunities and business needs require it?</p>",
+   "order": "d",
+   "possibleAnswers": [
+    {
+     "id": "8200522f49421021debd42012bba0002",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "8200522f49421021debd429abb540001",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "fb240f3f3a1e103136b1d21471e10000",
+   "body": "<p>What degree are you working towards? (Or if not currently working towards a degree, what is your highest degree obtained?)</p>",
+   "order": "b",
+   "possibleAnswers": [
+    {
+     "id": "23211df42b7a1001625d08396fd60003",
+     "answerText": "Doctoral degree or other equivalent advanced degree",
+     "order": "a"
+    },
+    {
+     "id": "23211df42b7a1001625d08d2e49c0000",
+     "answerText": "Masters degree",
+     "order": "b"
+    },
+    {
+     "id": "23211df42b7a1001625d08d2e49c0001",
+     "answerText": "Bachelors degree",
+     "order": "c"
+    },
+    {
+     "id": "23211df42b7a1001625d08d2e49c0002",
+     "answerText": "Associates degree",
+     "order": "d"
+    },
+    {
+     "id": "23211df42b7a1001625d08d2e49c0003",
+     "answerText": "I do not have and am not working toward a degree",
+     "order": "e"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "227c5ed1ba291030f5f400705b880007",
+   "body": "What is your annual compensation expectation for this role? If you do not wish to specify, type N/A in the space provided.",
+   "order": "c",
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c100025ab7d7f5aed0046",
+    "descriptor": "Text"
+   }
+  },
+  {
+   "id": "227c5ed1ba291030f5f3ff3d4a5d0000",
+   "body": "Did you attend or will you be attending any of the following conferences/career fairs?",
+   "order": "a",
+   "possibleAnswers": [
+    {
+     "id": "b84813980f5801855b8493059d01715e",
+     "answerText": "AISES",
+     "order": "a"
+    },
+    {
+     "id": "b84813980f58011784e293059d01725e",
+     "answerText": "Consortium",
+     "order": "b"
+    },
+    {
+     "id": "b84813980f580113630e94059d01735e",
+     "answerText": "Forte",
+     "order": "c"
+    },
+    {
+     "id": "b84813980f5801d8663494059d01745e",
+     "answerText": "Getting Hired Career Fair",
+     "order": "d"
+    },
+    {
+     "id": "b84813980f580151cf5694059d01755e",
+     "answerText": "MBA Veterans Conference",
+     "order": "e"
+    },
+    {
+     "id": "b84813980f580166d87894059d01765e",
+     "answerText": "MLT",
+     "order": "f"
+    },
+    {
+     "id": "b84813980f5801df319894059d01775e",
+     "answerText": "NABA",
+     "order": "g"
+    },
+    {
+     "id": "b84813980f58012c8eba94059d01785e",
+     "answerText": "NBMBAA",
+     "order": "h"
+    },
+    {
+     "id": "b84813980f58018a06dd94059d01795e",
+     "answerText": "NSBE",
+     "order": "i"
+    },
+    {
+     "id": "b84813980f58010a5ffc94059d017a5e",
+     "answerText": "Out for Undergrad (O4U)",
+     "order": "j"
+    },
+    {
+     "id": "b84813980f5801cdd42595059d017b5e",
+     "answerText": "oSTEM",
+     "order": "k"
+    },
+    {
+     "id": "b84813980f5801ad118195059d017c5e",
+     "answerText": "ROMBA",
+     "order": "l"
+    },
+    {
+     "id": "b84813980f58010b9caa95059d017d5e",
+     "answerText": "SACC - Service Academy Career Conference",
+     "order": "m"
+    },
+    {
+     "id": "b84813980f58010d3fce95059d017e5e",
+     "answerText": "SASE",
+     "order": "n"
+    },
+    {
+     "id": "b84813980f58016fc2f295059d017f5e",
+     "answerText": "SHPE",
+     "order": "o"
+    },
+    {
+     "id": "b84813980f580123441696059d01805e",
+     "answerText": "SWE",
+     "order": "p"
+    },
+    {
+     "id": "b84813980f580126263a96059d01815e",
+     "answerText": "Not Applicable",
+     "order": "q"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  }
+ ]
+}

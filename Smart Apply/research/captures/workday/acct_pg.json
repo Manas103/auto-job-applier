@@ -1,0 +1,39 @@
+{
+ "consentInfo": {
+  "introMessage": "<p>Verify your email to ensure updates. If nearing graduation, avoid school emails as they may be deactivated</p>",
+  "message": "<p>The Procter &amp; Gamble Company and its subsidiaries and affiliates worldwide (\u201cP&amp;G\u201d) processes your personal information in accordance with applicable laws and P&amp;G\u2019s Global Candidate Privacy Notice (and any applicable regional addenda). Please open this <a href=\"https://privacypolicy.pg.com/employee/candidate/\" target=\"_blank\">window</a> to review the P&amp;G Global Candidate Privacy Notice (and any applicable regional addenda) then return here to complete your application.<br /><span>\u00a0</span><br />The information you submit for P&amp;G&#39;s job application process must be complete and accurate. Providing false information during any step of the application process may lead to your permanent rejection or subsequent termination from P&amp;G employment.</p><p></p><p><span>CANDIDATES IN ASIA, MIDDLE EAST, AND AFRICA: BY CHECKING THIS BOX, YOU ALSO CONFIRM THAT YOU WISH TO CONSENT TO THE PROCESSING OF YOUR PERSONAL INFORMATION FOR THE PURPOSES DESCRIBED IN P&amp;G\u2019S GLOBAL CANDIDATE PRIVACY NOTICE (AND ANY APPLICABLE REGIONAL ADDENDA).</span></p><p></p><p><span>California Residents: Please click the following link to opt-out of the sale/share of your information: <a href=\"http://preferencecenter.pg.com/en-us/datarequests/\" target=\"_blank\">Do Not Sell or Share My Personal Information</a>.</span></p>",
+  "label": "I UNDERSTAND AND ACCEPT THE TERMS DESCRIBED ABOVE AND IN P&G\u2019s GLOBAL CANDIDATE PRIVACY NOTICE."
+ },
+ "passwordRules": [
+  {
+   "name": "MUST_SPECIAL",
+   "value": true,
+   "description": "A special character"
+  },
+  {
+   "name": "MIN_LENGTH",
+   "value": 8,
+   "description": "A minimum of 8 characters"
+  },
+  {
+   "name": "MUST_NUMERIC",
+   "value": true,
+   "description": "A numeric character"
+  },
+  {
+   "name": "MUST_LOWERCASE",
+   "value": true,
+   "description": "A lowercase character"
+  },
+  {
+   "name": "MUST_UPPERCASE",
+   "value": true,
+   "description": "An uppercase character"
+  },
+  {
+   "name": "MUST_ALPHABET",
+   "value": true,
+   "description": "An alphabetic character"
+  }
+ ]
+}

@@ -1,0 +1,260 @@
+{
+  "data_dir": "data",
+  "roles_dir": "roles",
+  "projects_dir": "projects",
+  "dashboard": {
+    "host": "127.0.0.1",
+    "port": 8765,
+    "public_base_url": "http://127.0.0.1:8765"
+  },
+  "collector": {
+    "interval_minutes": 15,
+    "user_agent": "internship-collector/2.0 (personal job tracker)",
+    "http_timeout_s": 60,
+    "seed_quiet": true,
+    "sources": [
+      {
+        "name": "simplify",
+        "type": "simplify_json",
+        "url": "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json",
+        "enabled": true
+      },
+      {
+        "name": "vanshb03",
+        "type": "simplify_json",
+        "url": "https://raw.githubusercontent.com/vanshb03/Summer2027-Internships/dev/.github/scripts/listings.json",
+        "enabled": true
+      },
+      {
+        "name": "speedyapply",
+        "type": "speedyapply_md",
+        "url": "https://raw.githubusercontent.com/speedyapply/2027-SWE-College-Jobs/main/README.md",
+        "enabled": true
+      }
+    ]
+  },
+  "watchlist": {
+    "default_poll_minutes": 60,
+    "title_regex": "intern|co-?op",
+    "workday_search_text": "intern",
+    "workday_max_pages": 5,
+    "auto_add_on_approve": true
+  },
+  "screen": {
+    "categories": [
+      "Software",
+      "AI/ML/Data",
+      "Quant"
+    ],
+    "target_terms": [
+      "Summer 2027",
+      "Fall 2027",
+      "Spring 2027",
+      "Winter 2027"
+    ],
+    "require_degree": "Bachelor's",
+    "us_locations_only": true,
+    "citizenship_required_out": true,
+    "exclude_title_regex": "\\b(new grad|full[- ]time|phd)\\b",
+    "fetch_jd_before_ping": true,
+    "applicant": {
+      "work_auth": "us_permanent_resident",
+      "graduation": "2028-05"
+    }
+  },
+  "jd": {
+    "http_timeout_s": 15,
+    "min_chars": 400,
+    "browser_enabled": true,
+    "browser_timeout_s": 45
+  },
+  "notify": {
+    "enabled": false,
+    "app_id": "{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "powershell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "max_pings_per_run": 8,
+    "quiet_hours": {
+      "start": "23:00",
+      "end": "08:00"
+    },
+    "ntfy_topic": null
+  },
+  "claude": {
+    "cmd": [
+      "claude"
+    ],
+    "model": "claude-opus-5",
+    "fallback_model": null,
+    "extra_args": [],
+    "env": {
+      "ARCHON_AGENT": "1"
+    },
+    "guard_hook": true
+  },
+  "stages": {
+    "ideamaker": {
+      "max_budget_usd": 15,
+      "timeout_min": 45,
+      "max_fix_rounds": 3,
+      "fix_budget_usd": 5,
+      "max_attempts": 2,
+      "max_turns": 150,
+      "fix_turns": 40,
+      "model": "claude-opus-5",
+      "tools": [
+        "Bash",
+        "Read",
+        "Write",
+        "Edit",
+        "Glob",
+        "Grep",
+        "WebSearch",
+        "WebFetch"
+      ]
+    },
+    "builder": {
+      "max_budget_usd": 28,
+      "timeout_min": 180,
+      "max_fix_rounds": 1,
+      "fix_budget_usd": 10,
+      "max_attempts": 2,
+      "max_turns": 400,
+      "fix_turns": 80,
+      "min_projects": 1,
+      "model": "claude-sonnet-5",
+      "tools": [
+        "Bash",
+        "Read",
+        "Write",
+        "Edit",
+        "Glob",
+        "Grep",
+        "PowerShell",
+        "WebSearch",
+        "WebFetch"
+      ]
+    },
+    "reconcile": {
+      "max_budget_usd": 8,
+      "timeout_min": 30,
+      "max_fix_rounds": 2,
+      "fix_budget_usd": 4,
+      "max_attempts": 2,
+      "max_turns": 80,
+      "fix_turns": 30,
+      "model": "claude-sonnet-5",
+      "tools": [
+        "Bash",
+        "Read",
+        "Write",
+        "Edit",
+        "Glob",
+        "Grep"
+      ]
+    },
+    "critic": {
+      "max_budget_usd": 6,
+      "timeout_min": 20,
+      "max_fix_rounds": 1,
+      "fix_budget_usd": 6,
+      "max_attempts": 2,
+      "max_turns": 50,
+      "fix_turns": 30,
+      "model": "claude-opus-5",
+      "tools": [
+        "Bash",
+        "Read",
+        "Write",
+        "Edit",
+        "Glob",
+        "Grep",
+        "WebFetch"
+      ]
+    }
+  },
+  "worker": {
+    "threads": 2,
+    "auto_continue": true,
+    "auto_requeue_on_restart": true,
+    "stop_grace_s": 20,
+    "job_budget_usd": 50,
+    "below_normal_priority": true,
+    "requeue_ready_on_start": false
+  },
+  "verify": {
+    "pdflatex": "pdflatex",
+    "pdfinfo": "pdfinfo",
+    "allowed_future_dates": [
+      "May 2028"
+    ],
+    "compile_timeout_s": 120,
+    "min_source_urls": 3
+  },
+  "wsl": {
+    "distro": "Ubuntu-22.04",
+    "cuda_bin": "/usr/local/cuda/bin"
+  },
+  "msvc": {
+    "vcvars": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Auxiliary\\Build\\vcvars64.bat"
+  },
+  "log_level": "INFO",
+  "research": {
+    "enabled": true,
+    "model": "claude-sonnet-5",
+    "ttl_days": 45,
+    "max_budget_usd": 3.0,
+    "max_turns": 40,
+    "timeout_min": 20
+  },
+  "rank": {
+    "enabled": true,
+    "model": "claude-sonnet-5"
+  },
+  "tiers": {
+    "enabled": true,
+    "score_cutoffs": {
+      "S": 90,
+      "A": 75,
+      "B": 55,
+      "C": 35
+    },
+    "lanes": {
+      "S": "full",
+      "A": "full",
+      "B": "light",
+      "C": "archetype",
+      "D": "archetype"
+    },
+    "ping": {
+      "S": true,
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": false
+    }
+  },
+  "lite": {
+    "model": "claude-opus-5",
+    "max_budget_usd": 3,
+    "max_turns": 30,
+    "max_fix_rounds": 1,
+    "fix_budget_usd": 1,
+    "timeout_min": 20,
+    "tools": [
+      "Bash",
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep"
+    ]
+  },
+  "usage": {
+    "enabled": true,
+    "project_cap_pct": 40,
+    "daily_cap_pct": 6,
+    "hard_cap_pct": 70,
+    "dollars_per_percent": 11.0,
+    "_note": "Weekly Claude usage brake (the user, 2026-10-09). hard_cap_pct: no Claude calls once the week reaches it. project_cap_pct: full-lane stages wait once this project's share of the week reaches it. daily_cap_pct: the same, counted since local midnight, so the week is not spent in one day. dollars_per_percent converts the CLI's reported run cost into % of the week (measured about 11 to 14)."
+  }
+}

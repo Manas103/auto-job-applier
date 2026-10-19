@@ -1,0 +1,12 @@
+{"company": "Optiver", "title": "Software Engineer Intern (Summer 2027, Chicago)", "slug": "t", "term": "Summer 2027",
+ "domain_tags": ["trading", "platform", "tooling", "cpp", "python"],
+ "full_ideal": {"name": "Mira Kaplan", "school": "University of Chicago"},
+ "projects": [
+  {"title": "Market Data Decoder and Tick Capture Pipeline", "stack": "C++, Python", "month": "Feb. 2026",
+   "claims": ["1M+ messages/sec", "500+ instruments", "9x replay storage reduction", "bit-for-bit reproducible sessions"],
+   "existing_repo": "market-data-tick-capture", "relationship": "extend"},
+  {"title": "Model Validation and Alerting Framework", "stack": "Python, Kafka, PostgreSQL", "month": "Jun. 2026",
+   "claims": ["200+ rules per second"], "existing_repo": "model-validation-alerting", "relationship": "reuse"},
+  {"title": "Lock-Free Order Matching Engine", "stack": "C++, Lock-Free Data Structures", "month": "Dec. 2025",
+   "claims": ["500K+ orders/sec", "p99 latency under 1us", "5M+ simulated order events"], "existing_repo": "lock-free-order-matching-engine", "relationship": "reuse"}
+ ]}

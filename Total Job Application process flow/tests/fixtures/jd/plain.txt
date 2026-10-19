@@ -1,0 +1,11 @@
+Software Engineer Intern
+
+Responsibilities
+- Build backend services in Go.
+- Own a feature end to end.
+
+Qualifications
+- Pursuing a degree in Computer Science or related field.
+- Strong fundamentals in data structures and algorithms.
+
+We offer competitive pay and mentorship.

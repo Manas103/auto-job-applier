@@ -1,0 +1,34 @@
+{
+ "passwordRules": [
+  {
+   "name": "MUST_SPECIAL",
+   "value": true,
+   "description": "A special character"
+  },
+  {
+   "name": "MUST_UPPERCASE",
+   "value": true,
+   "description": "An uppercase character"
+  },
+  {
+   "name": "MUST_LOWERCASE",
+   "value": true,
+   "description": "A lowercase character"
+  },
+  {
+   "name": "MUST_ALPHABET",
+   "value": true,
+   "description": "An alphabetic character"
+  },
+  {
+   "name": "MUST_NUMERIC",
+   "value": true,
+   "description": "A numeric character"
+  },
+  {
+   "name": "MIN_LENGTH",
+   "value": 8,
+   "description": "A minimum of 8 characters"
+  }
+ ]
+}

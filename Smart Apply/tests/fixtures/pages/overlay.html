@@ -1,0 +1,28 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Workday overlay fixture</title>
+<style>
+  .btnwrap { position: relative; width: 220px; height: 40px; margin: 12px 0; }
+  .btnwrap [data-automation-id=click_filter] { position: absolute; left: 0; top: 0; width: 220px; height: 40px; }
+</style></head>
+<body>
+<!-- Workday (DraftKings, 2026-09-27): a transparent overlay `div[role=button][aria-label=Submit]` sits above every
+     auth and footer button and forwards the click. The guard must judge the button underneath, not the overlay:
+     the sign-in overlay passes, the "Submit" footer overlay is blocked at both layers. -->
+<form id="signin" method="post" action="/signin">
+  <div data-automation-id="noCaptchaWrapper" class="btnwrap">
+    <div role="button" tabindex="0" aria-label="Submit" data-automation-id="click_filter" id="signinOverlay"></div>
+    <button type="submit" data-automation-id="signInSubmitButton" id="signInBtn" tabindex="-2" aria-hidden="true">Sign In</button>
+  </div>
+</form>
+<form id="final" method="post" action="/apply">
+  <div class="btnwrap">
+    <div role="button" tabindex="0" aria-label="Submit" data-automation-id="click_filter" id="submitOverlay"></div>
+    <button type="submit" data-automation-id="bottom-navigation-next-button" id="submitBtn" tabindex="-2" aria-hidden="true">Submit</button>
+  </div>
+</form>
+<script>
+  for (const [ov, btn] of [["signinOverlay", "signInBtn"], ["submitOverlay", "submitBtn"]]) {
+    document.getElementById(ov).addEventListener('click', () => document.getElementById(btn).click());
+  }
+</script>
+</body></html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Fixture: Workday-like wizard</title></head>
+<body>
+<ol data-automation-id="progressBar">
+  <li data-automation-id="progressBarActiveStep" id="step">current step 1 of 3 My Information</li>
+</ol>
+<div id="page1" data-automation-id="applyFlowMyInfoPage">
+  <div data-automation-id="formField-legalName--firstName"><label for="fn">First Name</label><input id="fn" name="firstName"></div>
+  <div data-automation-id="formField-legalName--lastName"><label for="ln">Last Name</label><input id="ln" name="lastName"></div>
+  <input data-automation-id="beecatcher" name="website" style="position:absolute;left:-9999px" aria-hidden="true">
+</div>
+<div id="page2" data-automation-id="applyFlowMyExpPage" hidden>
+  <label for="resume">Resume</label><input id="resume" type="file" data-automation-id="file-upload-input-ref">
+  <span id="uploaded" data-automation-id="file-upload-successful" hidden>uploaded</span>
+</div>
+<div id="page3" data-automation-id="applyFlowReviewPage" hidden>
+  <p>Review your application.</p>
+</div>
+<footer>
+  <button type="button" id="back" data-automation-id="pageFooterBackButton">Back</button>
+  <button type="button" id="next" data-automation-id="pageFooterNextButton">Save and Continue</button>
+</footer>
+<pre id="log"></pre>
+<script>
+  let step = 1;
+  const names = ['My Information', 'My Experience', 'Review'];
+  const render = () => {
+    for (let i = 1; i <= 3; i++) document.getElementById('page' + i).hidden = (i !== step);
+    document.getElementById('step').textContent = `current step ${step} of 3 ${names[step-1]}`;
+    document.getElementById('next').textContent = step === 3 ? 'Submit' : 'Save and Continue';
+  };
+  document.getElementById('resume').addEventListener('change', () => { document.getElementById('uploaded').hidden = false; });
+  document.getElementById('next').addEventListener('click', async () => {
+    if (step < 3) {
+      // intermediate save, must pass the guard
+      await fetch('/wday/cxs/t/jobapplication/1/name', { method: 'POST', body: '{}' });
+      step++; render();
+    } else {
+      const r = await fetch('/wday/cxs/t/jobapplication/1/finalize', { method: 'POST', body: '{}' }).catch(e => ({ status: 'ERR' }));
+      document.getElementById('log').textContent += 'finalize:' + r.status + '\n';
+    }
+  });
+  document.getElementById('back').addEventListener('click', () => { if (step > 1) { step--; render(); } });
+  render();
+</script>
+</body></html>

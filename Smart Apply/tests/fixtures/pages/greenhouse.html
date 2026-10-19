@@ -1,0 +1,130 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Fixture: Greenhouse-like hosted form</title>
+<style>.select__menu{border:1px solid #999}.select__option{padding:2px 6px;cursor:pointer}.hint{color:#777;padding:2px 6px}</style>
+</head>
+<body>
+<h1>Job Application for SWE Intern at Acme</h1>
+<form id="application-form" method="post" action="/acme/jobs/4324855009">
+  <label for="first_name">First Name*</label><input id="first_name" class="input" aria-required="true">
+  <label for="last_name">Last Name*</label><input id="last_name" class="input" aria-required="true">
+  <label for="preferred_name">Preferred First Name</label><input id="preferred_name" class="input">
+  <label for="email">Email*</label><input id="email" class="input" aria-required="true">
+  <div class="select__container" data-id="country"><label for="country">Country*</label>
+    <div class="select__control"><div class="select__value-container"><input id="country" role="combobox" class="select__input" aria-expanded="false" aria-required="true"></div></div>
+    <input aria-hidden="true" required class="requiredInput" tabindex="-1" style="opacity:0;position:absolute">
+  </div>
+  <label for="phone">Phone*</label><input id="phone" type="tel" class="input" aria-required="true">
+  <div class="select__container" data-id="candidate-location"><label for="candidate-location">Location (City)*</label>
+    <div class="select__control"><div class="select__value-container"><input id="candidate-location" role="combobox" class="select__input" aria-required="true"></div></div></div>
+  <div id="resume-group"><label>Resume/CV*</label><input id="resume" type="file" class="visually-hidden"></div>
+  <!-- education: this board shows school, degree and end year only (no start month, no discipline) -->
+  <div class="select__container" data-id="school--0"><label for="school--0">School</label>
+    <div class="select__control"><div class="select__value-container"><input id="school--0" role="combobox" class="select__input"></div></div></div>
+  <div class="select__container" data-id="degree--0"><label for="degree--0">Degree*</label>
+    <div class="select__control"><div class="select__value-container"><input id="degree--0" role="combobox" class="select__input" aria-required="true"></div></div></div>
+  <label for="end-year--0">End date year*</label><input id="end-year--0" type="number" class="input" aria-required="true">
+  <label for="question_1">Why do you want to work at Acme?*</label><textarea id="question_1" aria-required="true"></textarea>
+  <div class="select__container" data-id="question_2"><label for="question_2">Are you legally authorized to work in the United States?*</label>
+    <div class="select__control"><div class="select__value-container"><input id="question_2" role="combobox" class="select__input" aria-required="true"></div></div></div>
+  <div class="select__container" data-id="question_3"><label for="question_3">Will you now or in the future require sponsorship?*</label>
+    <div class="select__control"><div class="select__value-container"><input id="question_3" role="combobox" class="select__input" aria-required="true"></div></div></div>
+  <label for="question_4">LinkedIn Profile</label><input id="question_4" class="input">
+  <div class="select__container" data-id="question_5"><label for="question_5">What is your GPA?*</label>
+    <div class="select__control"><div class="select__value-container"><input id="question_5" role="combobox" class="select__input" aria-required="true"></div></div></div>
+  <div class="select__container" data-id="question_6"><label for="question_6">When do you expect to graduate?*</label>
+    <div class="select__control"><div class="select__value-container"><input id="question_6" role="combobox" class="select__input" aria-required="true"></div></div></div>
+  <div><label for="question_9">Transcript</label><input id="question_9" type="file"></div>
+  <!-- EEOC: hispanic first; race appears only after "No" -->
+  <div class="select__container" data-id="gender"><label for="gender">Gender</label>
+    <div class="select__control"><div class="select__value-container"><input id="gender" role="combobox" class="select__input"></div></div></div>
+  <div class="select__container" data-id="hispanic_ethnicity"><label for="hispanic_ethnicity">Are you Hispanic/Latino?</label>
+    <div class="select__control"><div class="select__value-container"><input id="hispanic_ethnicity" role="combobox" class="select__input"></div></div></div>
+  <div id="race-slot"></div>
+  <div class="select__container" data-id="veteran_status"><label for="veteran_status">Veteran Status</label>
+    <div class="select__control"><div class="select__value-container"><input id="veteran_status" role="combobox" class="select__input"></div></div></div>
+  <fieldset class="checkbox" id="question_20[]"><legend>Undergrad Discipline(s)*</legend>
+    <label><input type="checkbox" id="question_20[]_1" name="question_20[]" value="1" aria-required="true"> Mathematics</label>
+    <label><input type="checkbox" id="question_20[]_2" name="question_20[]" value="2" aria-required="true"> Computer Science</label>
+    <label><input type="checkbox" id="question_20[]_3" name="question_20[]" value="3" aria-required="true"> Statistics</label>
+  </fieldset>
+  <label><input type="checkbox" id="privacy_consent" aria-required="true"> I agree to the privacy policy*</label>
+  <button type="submit" class="btn">Submit application</button>
+</form>
+<pre id="log"></pre>
+<script>
+  // A small imitation of react-select: opens on mousedown, renders a portal listbox with ids
+  // react-select-<id>-listbox / react-select-<id>-option-N, shows the choice in .select__single-value.
+  // Async lists (school, candidate-location) show a hint until at least 2 characters are typed, then load after 350 ms.
+  const OPTIONS = {
+    'country': ['United States +1', 'Canada +1', 'Canada +91'],
+    'degree--0': ["Bachelor's Degree", "Master's Degree", 'High School'],
+    'question_2': ['Yes', 'No'],
+    'question_3': ['Yes', 'No'],
+    'question_5': ['Below 2', '2 - 2.49', '2.5 - 2.99', '3 - 3.49', '3.5 - 3.74', '3.75 - 4'],
+    'question_6': ['December 2026', 'May 2027', 'December 2027', 'May 2028', 'August 2028'],
+    'gender': ['Male', 'Female', 'Decline To Self Identify'],
+    'hispanic_ethnicity': ['Yes', 'No', 'Decline To Self Identify'],
+    'race': ['White', 'Asian', 'Decline To Self Identify'],
+    'veteran_status': ["I don't wish to answer", 'I identify as one or more of the classifications of a protected veteran', 'I am not a protected veteran'],
+  };
+  const ASYNC = {
+    'school--0': q => ['State University', 'State University Health', 'Illinois State University', 'University of Central Illinois'].filter(o => o.toLowerCase().includes(q)),
+    'candidate-location': q => ['Springfield, Illinois, United States', 'Springfield, Oklahoma, United States', 'Springfield, Kentucky, United States'].filter(o => o.toLowerCase().includes(q.split(',')[0])),
+  };
+  const chosen = {};
+  function wire(inp) {
+    const id = inp.id; const control = inp.closest('.select__control'); let menu = null; let timer = null;
+    const close = () => { if (menu) { menu.remove(); menu = null; inp.setAttribute('aria-expanded', 'false'); } };
+    const render = (opts) => {
+      const lb = menu.querySelector('[role=listbox]'); lb.innerHTML = '';
+      if (!opts.length) { const h = document.createElement('div'); h.className = 'hint'; h.textContent = ASYNC[id] ? 'Type to search' : 'No options'; lb.appendChild(h); return; }
+      opts.forEach((o, i) => {
+        const d = document.createElement('div'); d.id = `react-select-${id}-option-${i}`; d.className = 'select__option'; d.setAttribute('role', 'option'); d.textContent = o;
+        d.addEventListener('click', () => {
+          chosen[id] = o; inp.value = '';
+          let sv = control.querySelector('.select__single-value');
+          if (!sv) { sv = document.createElement('div'); sv.className = 'select__single-value'; control.querySelector('.select__value-container').prepend(sv); }
+          sv.textContent = o; const hidden = inp.closest('.select__container').querySelector('input[aria-hidden]'); if (hidden) hidden.value = o; close();
+          if (id === 'hispanic_ethnicity') {
+            const slot = document.getElementById('race-slot');
+            slot.innerHTML = o === 'No' ? '<div class="select__container" data-id="race"><label for="race">Race</label><div class="select__control"><div class="select__value-container"><input id="race" role="combobox" class="select__input"></div></div></div>' : '';
+            const r = slot.querySelector('input.select__input'); if (r) wire(r);
+          }
+        });
+        lb.appendChild(d);
+      });
+    };
+    const current = () => {
+      const q = inp.value.toLowerCase();
+      if (ASYNC[id]) return q.length >= 2 ? ASYNC[id](q) : [];
+      return OPTIONS[id].filter(o => !q || o.toLowerCase().includes(q));
+    };
+    const open = () => {
+      if (menu) return;
+      menu = document.createElement('div'); menu.className = 'select__menu';
+      const lb = document.createElement('div'); lb.id = `react-select-${id}-listbox`; lb.setAttribute('role', 'listbox');
+      menu.appendChild(lb); document.body.appendChild(menu); inp.setAttribute('aria-expanded', 'true');
+      render(ASYNC[id] ? [] : current());
+    };
+    inp.addEventListener('mousedown', () => { if (menu) close(); else open(); });
+    inp.addEventListener('input', () => {
+      if (!menu) open();
+      if (ASYNC[id]) { render([]); clearTimeout(timer); timer = setTimeout(() => { if (menu) render(current()); }, 350); }
+      else render(current());
+    });
+    inp.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+    document.addEventListener('mousedown', e => { if (menu && !menu.contains(e.target) && e.target !== inp) close(); }, true);
+  }
+  document.querySelectorAll('input.select__input').forEach(wire);
+  document.getElementById('resume').addEventListener('change', e => {
+    const f = e.target.files[0]; const g = document.getElementById('resume-group');
+    e.target.remove();
+    g.insertAdjacentHTML('beforeend', `<div><span>${f.name}</span> <button type="button" aria-label="Remove file">x</button></div>`);
+  });
+  document.getElementById('application-form').addEventListener('submit', async e => {
+    e.preventDefault();
+    const r = await fetch('/acme/jobs/4324855009', { method: 'POST', body: new FormData(e.target) }).catch(() => ({ status: 'ERR' }));
+    document.getElementById('log').textContent += 'apply:' + r.status + '\n';
+  });
+</script>
+</body></html>

@@ -1,0 +1,14 @@
+[
+  {"id": "3f7c2e4a-1b2c-4d5e-8f90-123456789abc", "text": "Software Engineering Intern (Summer 2027)",
+   "hostedUrl": "https://jobs.lever.co/defenseco/3f7c2e4a-1b2c-4d5e-8f90-123456789abc",
+   "applyUrl": "https://jobs.lever.co/defenseco/3f7c2e4a-1b2c-4d5e-8f90-123456789abc/apply",
+   "categories": {"location": "Arlington, VA", "team": "Engineering", "commitment": "Intern"},
+   "descriptionPlain": "Join our team to build software for national security. This role requires U.S. citizenship.",
+   "lists": [{"text": "Responsibilities", "content": "<li>Build services</li><li>Write tests</li>"},
+             {"text": "Requirements", "content": "<li>Must be a U.S. citizen</li>"}],
+   "additionalPlain": "Equal opportunity employer.", "createdAt": 1755000000000},
+  {"id": "9a8b7c6d-5e4f-4a3b-9c2d-1e0f9a8b7c6d", "text": "Staff Engineer",
+   "hostedUrl": "https://jobs.lever.co/defenseco/9a8b7c6d-5e4f-4a3b-9c2d-1e0f9a8b7c6d",
+   "categories": {"location": "Remote", "team": "Engineering", "commitment": "Full-time"},
+   "descriptionPlain": "Senior role.", "lists": [], "additionalPlain": "", "createdAt": 1755000000000}
+]

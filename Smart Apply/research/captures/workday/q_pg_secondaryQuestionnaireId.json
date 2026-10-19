@@ -1,0 +1,122 @@
+{
+ "id": "90b1c0017040101595b79b4ec7210000",
+ "instructions": "<p><b>Notices:</b></p><p>Notice to Massachusetts Applicants: \u00a0It is unlawful in Massachusetts to require or administer a lie detector test as a condition of employment or continued employment. \u00a0An employer who violates this law shall be subject to criminal penalties and civil liability.</p><br /><p>Colorado Residents: In any materials you submit, you may redact or remove age-identifying information such as age, date of birth, or dates of school attendance or graduation. You will not be penalized for redacting or removing this information.</p><br /><p>Notice to Georgia applicants: \u00a0The use of tobacco, e-cigarettes, vape products, and other nicotine ingestion methods is prohibited in all work areas, except in specially designated outdoor locations. \u00a0</p><br /><p>Notice to Maryland Applicants: \u00a0Under Maryland law, an employer may not require or demand, as a condition of employment, prospective employment, or continued employment, that an individual submit to or take a lie detector or similar test. \u00a0An employer who violates this law is guilty of a misdemeanor and subject to a fine not exceeding $100.</p><br /><p>Notice to San Francisco Residents: \u00a0Pursuant to the San Francisco Fair Chance Ordinance, we will consider for employment qualified applicants with arrest and conviction records.</p><br /><p><i>Immigration Sponsorship is not available for this role.\u00a0 Procter &amp; Gamble does not sponsor candidates for non-immigrant visas or permanent residency except in some areas that in P&amp;G\u2019s sole discretion require highly specialized backgrounds.\u00a0</i></p><p><i>\u00a0</i></p><p><i>It is important to answer the following questions accurately.\u00a0\u00a0Failure to provide an accurate answer may be grounds for revoking an offer of employment or termination of employment in the future.</i></p><p><i>\u00a0</i></p><p><i>For more information related to the question below, click </i><a target=\"_blank\" href=\"https://www.pgcareers.com/us/en/hiring-faq-#FAQ-US\"><span style=\"color:#0875e1\"><i><u>HERE</u></i></span></a><i>.</i></p>",
+ "questions": [
+  {
+   "id": "90b1c0017040101595de8a9865960000",
+   "body": "<p>Are you authorized to work in the US?</p>",
+   "order": "a",
+   "possibleAnswers": [
+    {
+     "id": "90b1c0017040101595dda0a79a1d0000",
+     "branchingQuestion": {
+      "id": "68190508ab711016326bbac3736b0000",
+      "body": "<p>Please select the statement that best applies to you. </p>",
+      "order": "a.a",
+      "possibleAnswers": [
+       {
+        "id": "68190508ab71101632644835354c0001",
+        "answerText": "Yes, I have work authorization that has no restrictions (applicable to US citizens or nationals, lawful permanent residents, asylees and refugees).",
+        "order": "a"
+       },
+       {
+        "id": "68190508ab71101632644835354c0002",
+        "answerText": "Yes, but my work authorization requires either school approval (CPT or OPT) or employer-supported USCIS approval (meaning TN, H-1B, H-1B1, E-3, OPT, STEM OPT, among others).",
+        "order": "b",
+        "score": -100
+       },
+       {
+        "id": "68190508ab71101632644835354c0003",
+        "answerText": "Yes, I have current work authorization that does not require employer sponsorship, but my authorization is subject to renewal or extension (e.g., DACA, TPS, DED, VAWA, U or T visa, etc.). This selection does not apply if you have OPT or STEM OPT.",
+        "order": "c"
+       }
+      ],
+      "required": true,
+      "type": {
+       "id": "c4d9bd57996c10002583f04b9fc30042",
+       "descriptor": "Multiple Choice - Single Select"
+      }
+     },
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "90b1c0017040101595dda1413efa0001",
+     "answerText": "No, I am not authorized to work in the US currently and would need school approval or employer-supported USCIS approval to begin work.",
+     "order": "b",
+     "score": -100
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "90b1c0017040101595b79d1b66d50003",
+   "body": "<p>Are you currently serving or have you ever served as part of the military? \u00a0</p>",
+   "order": "c",
+   "possibleAnswers": [
+    {
+     "id": "a22759a30e871000c52d4b992b820001",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "a22759a30e871000c52d4c3977ee0000",
+     "answerText": "No",
+     "order": "b"
+    },
+    {
+     "id": "a22759a30e871000c52d4c3977ee0001",
+     "answerText": "Prefer not to answer",
+     "order": "c"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "90b1c0017040101595b79d1b66d50002",
+   "body": "If hired, when would you be available to start?",
+   "order": "b",
+   "required": true,
+   "type": {
+    "id": "85fb160ed47910001589e3a427670070",
+    "descriptor": "Date"
+   }
+  },
+  {
+   "id": "68190508ab711016326bbac3736b0000",
+   "body": "<p>Please select the statement that best applies to you. </p>",
+   "order": "a.a",
+   "possibleAnswers": [
+    {
+     "id": "68190508ab71101632644835354c0001",
+     "answerText": "Yes, I have work authorization that has no restrictions (applicable to US citizens or nationals, lawful permanent residents, asylees and refugees).",
+     "order": "a"
+    },
+    {
+     "id": "68190508ab71101632644835354c0002",
+     "answerText": "Yes, but my work authorization requires either school approval (CPT or OPT) or employer-supported USCIS approval (meaning TN, H-1B, H-1B1, E-3, OPT, STEM OPT, among others).",
+     "order": "b",
+     "score": -100
+    },
+    {
+     "id": "68190508ab71101632644835354c0003",
+     "answerText": "Yes, I have current work authorization that does not require employer sponsorship, but my authorization is subject to renewal or extension (e.g., DACA, TPS, DED, VAWA, U or T visa, etc.). This selection does not apply if you have OPT or STEM OPT.",
+     "order": "c"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  }
+ ]
+}

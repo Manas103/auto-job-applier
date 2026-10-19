@@ -1,0 +1,11 @@
+[
+  {"id": "v1", "company_name": "PlainCo", "title": "Hardware Engineer Intern",
+   "url": "https://www.plainco.com/careers/123/?utm_source=vansh", "locations": ["Boston, MA"],
+   "category": "", "sponsorship": "", "terms": ["Summer 2027"], "degrees": [], "date_posted": 1755000000, "active": true, "is_visible": true},
+  {"id": "v2", "company_name": "ACME, Inc", "title": "Software Engineering Internship (Summer 2027)",
+   "url": "https://acme.com/apply/sei", "locations": ["Chicago, IL"],
+   "category": "", "sponsorship": "", "terms": ["Summer 2027"], "degrees": [], "date_posted": 1755000000, "active": true, "is_visible": true},
+  {"id": "v3", "company_name": "NewCo", "title": "Quantitative Developer Intern",
+   "url": "https://newco.com/jobs/77", "locations": ["New York, NY"],
+   "category": "", "sponsorship": "", "terms": ["Summer 2027"], "degrees": [], "date_posted": 1755000000, "active": true, "is_visible": true}
+]

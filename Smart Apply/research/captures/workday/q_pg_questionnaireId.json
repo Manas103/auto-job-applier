@@ -1,0 +1,254 @@
+{
+ "id": "7b7ad1cf80ce1001aa18f2e2ef5d0000",
+ "instructions": "<p>Please answer the following questions as accurately as possible.</p>",
+ "questions": [
+  {
+   "id": "7b7ad1cf80ce1001aa18f54a2bfb0005",
+   "body": "<p><span>I would like P&amp;G to share my personal information with its advertising partners to show me, and others like me, news and updates about P&amp;G careers and roles through online channels such as LinkedIn, Instagram, Meta, Facebook, Google, TikTok, and YouTube. </span><span>Your decision to opt-in or opt-out will not disqualify you from participating in P&amp;G\u2019s recruitment process and you may opt-out at any time.</span></p>",
+   "order": "h",
+   "possibleAnswers": [
+    {
+     "id": "ccce5f71a89f1001ab81370ae8dc0000",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "ccce5f71a89f1001ab81370ae8dc0001",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "40d8b318e1421001aa2d28c1578e0003",
+   "body": "<p><b><span>Have you <u>either</u> graduated within the past 6 months, or are you an active student?</span></b></p>",
+   "order": "g",
+   "possibleAnswers": [
+    {
+     "id": "40d8b318e1421001a76cced246df0000",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "40d8b318e1421001a76cced246df0001",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "40d8b318e1421001aa2d28c1578e0000",
+   "body": "<p>Our thorough and purposeful hiring process ensures that we recruit top talent to join us at P&amp;G \u2013 talent with a complete understanding of who we are, what we do and what we expect from you. In line with our Purpose, Values, and Principles (PVP), we value fairness, objectivity and ethical practices in our talent assessment and interview processes. As an applicant to a role within P&amp;G, you are expected to adhere to the following guidelines to ensure a fair and equitable experience for everyone:</p><p></p><p>\u2022\u00a0\u00a0Use the same profile/account throughout the application process, and contact technical support if you have any issues with an existing profile</p><p><span>\u2022\u00a0\u00a0Complete</span> all stages of the selection process (e.g., assessment, interview) independently and without any help \u2013 from others or the use of Artificial Intelligence</p><p>\u2022\u00a0 Provide answers and information throughout the application, assessment and interview process that accurately describes you, your experiences and interests</p><p>\u2022\u00a0\u00a0Respect the integrity of the P&amp;G selection process and do not copy or share the assessment content or materials in any capacity (e.g., screenshots, recordings)</p><p>\u2022\u00a0\u00a0Avoid sharing any highly <span>confidential/proprietary</span> information received throughout the application and interview process</p><p></p><p><b>I acknowledge I will adhere to these expectations throughout the application process.</b></p>",
+   "order": "f",
+   "possibleAnswers": [
+    {
+     "id": "7b7ad1cf80ce1001a676f1244e6e0000",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "7b7ad1cf80ce1001a676f1244e6e0001",
+     "answerText": "No",
+     "order": "b",
+     "score": -100
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "7b7ad1cf80ce1001aa18f4163a130006",
+   "body": "What source(s) of information influenced your decision to apply for a P&amp;G position?",
+   "order": "e",
+   "possibleAnswers": [
+    {
+     "id": "5f81c5e209ea01a204cb7a64b001f938",
+     "answerText": "P&G Career Site (pgcareers.com)",
+     "order": "a"
+    },
+    {
+     "id": "5f81c5e209ea011d89537c64b001fa38",
+     "answerText": "Social Network Site (Facebook, WeChat, Twitter, etc.)",
+     "order": "b"
+    },
+    {
+     "id": "5f81c5e209ea01b983d57c64b001fb38",
+     "answerText": "LinkedIn",
+     "order": "c"
+    },
+    {
+     "id": "5f81c5e209ea019bd4507d64b001fc38",
+     "answerText": "Job Board (Indeed, Glassdoor, etc.)",
+     "order": "d"
+    },
+    {
+     "id": "5f81c5e209ea010b6df37d64b001fd38",
+     "answerText": "On-campus Activity",
+     "order": "e"
+    },
+    {
+     "id": "5f81c5e209ea0178792c7e64b001fe38",
+     "answerText": "Career/Job Fair",
+     "order": "f"
+    },
+    {
+     "id": "5f81c5e209ea019a084d7e64b001ff38",
+     "answerText": "Personal Engagement with a P&G Recruiter",
+     "order": "g"
+    },
+    {
+     "id": "5f81c5e209ea010cba807e64b0010039",
+     "answerText": "P&G Newsletter or Job Alert",
+     "order": "h"
+    },
+    {
+     "id": "5f81c5e209ea01a9c9a27e64b0010139",
+     "answerText": "Referred by friend/family member/professor/other",
+     "order": "i"
+    },
+    {
+     "id": "5f81c5e209ea01cb11bb7e64b0010239",
+     "answerText": "Print Advertisement",
+     "order": "j"
+    },
+    {
+     "id": "5f81c5e209ea015486ec7e64b0010339",
+     "answerText": "Recruitment Agency",
+     "order": "k"
+    },
+    {
+     "id": "5f81c5e209ea019e343d7f64b0010439",
+     "answerText": "Other",
+     "order": "l"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c100025ab7d705b150045",
+    "descriptor": "Multiple Choice - Multi Select"
+   }
+  },
+  {
+   "id": "7b7ad1cf80ce1001aa18f4163a130003",
+   "body": "Do you meet the minimum qualification requirements for this role as stated in the job description?",
+   "order": "d",
+   "possibleAnswers": [
+    {
+     "id": "e294e7e48559019b6795d1b932078e62",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "e294e7e4855901a46a9fd1b932078f62",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "7b7ad1cf80ce1001aa18f4163a130000",
+   "body": "Although we encourage you to apply to all positions in which you have an interest, P&amp;G Recruiters have the ability to consider your application for other positions to which you have not applied.  Would you like to be considered for other positions for which you may be qualified?",
+   "order": "c",
+   "possibleAnswers": [
+    {
+     "id": "e294e7e48559019c4d0179b932072e5f",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "e294e7e4855901376d0c79b932072f5f",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "7b7ad1cf80ce1001aa18f37c78740003",
+   "body": "<p><span>Do you or any immediate family members (spouse, partner, parent, child, or sibling) have any personal, financial, or professional relationships that could be perceived as a conflict of interest with our organization or the position for which you are applying? This includes relationships with anyone who works for P&amp;G, a retailer selling P&amp;G products, or a competitor of P&amp;G. ( Please refer to the following link for a list of products: </span> <span><a href=\"https://us.pg.com/brands\" target=\"_blank\">https://us.pg.com/brands</a></span> )</p>",
+   "order": "b",
+   "possibleAnswers": [
+    {
+     "id": "40d8b318e1421001a80db05f9ed90001",
+     "branchingQuestion": {
+      "id": "40d8b318e1421001aa339dd7b47d0000",
+      "body": "<p>If your answer to the previous Question is a yes, please provide more details on name/connection with P&amp;G employee or similar FMCG industries.</p>",
+      "order": "b.a",
+      "required": true,
+      "type": {
+       "id": "c4d9bd57996c100025ab7d7f5aed0046",
+       "descriptor": "Text"
+      }
+     },
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "40d8b318e1421001a80db05f9ed90002",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "7b7ad1cf80ce1001aa18f37c78740000",
+   "body": "Are you currently legally authorized to work in the country where this role is located?",
+   "order": "a",
+   "possibleAnswers": [
+    {
+     "id": "24357d3d94240101026054db818e0000",
+     "answerText": "Yes",
+     "order": "a"
+    },
+    {
+     "id": "24357d3d94240101026054db818e0001",
+     "answerText": "No",
+     "order": "b",
+     "score": -100
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "40d8b318e1421001aa339dd7b47d0000",
+   "body": "<p>If your answer to the previous Question is a yes, please provide more details on name/connection with P&amp;G employee or similar FMCG industries.</p>",
+   "order": "b.a",
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c100025ab7d7f5aed0046",
+    "descriptor": "Text"
+   }
+  }
+ ]
+}

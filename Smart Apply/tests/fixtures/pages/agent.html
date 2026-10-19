@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Acme Careers: Software Engineer Intern</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 24px auto; }
+  .hidden { display: none; }
+  label { display: block; margin-top: 10px; }
+  .menu { border: 1px solid #999; position: absolute; background: #fff; }
+  .menu li { padding: 4px 8px; list-style: none; cursor: pointer; }
+  .err { color: #b00; }
+</style>
+</head>
+<body>
+<h1>Software Engineer Intern</h1>
+<div id="posting">
+  <p>Acme builds rockets. We are hiring interns for Summer 2027.</p>
+  <input type="search" placeholder="Search jobs" aria-label="Search jobs">
+  <button id="applyBtn" type="button">Apply now</button>
+</div>
+
+<div id="application" class="hidden">
+  <h2>Application</h2>
+  <form id="appForm" action="/apply" method="post">
+    <fieldset id="step1">
+      <legend>Personal information</legend>
+      <label for="fn">First name *</label><input id="fn" name="first_name" required>
+      <label for="ln">Last name *</label><input id="ln" name="last_name" required>
+      <label for="em">Email *</label><input id="em" name="email" type="email" required>
+      <label for="ph">Phone</label><input id="ph" name="phone" type="tel">
+      <input name="website" class="hidden" tabindex="-1" autocomplete="off">
+      <label for="country">Country *</label>
+      <select id="country" name="country" required>
+        <option value="">Select...</option><option>Canada</option><option>United States</option><option>Other</option>
+      </select>
+      <label for="school">School</label>
+      <input id="school" name="school" role="combobox" aria-expanded="false" autocomplete="off">
+      <ul id="schoolMenu" class="menu hidden" role="listbox"></ul>
+      <label for="resume">Resume (PDF) *</label><input id="resume" name="resume" type="file" accept=".pdf" required>
+      <label for="why">Why Acme?</label><textarea id="why" name="why" maxlength="1200"></textarea>
+      <fieldset>
+        <legend>Are you legally authorized to work in the United States? *</legend>
+        <label><input type="radio" name="auth" value="Yes"> Yes</label>
+        <label><input type="radio" name="auth" value="No"> No</label>
+      </fieldset>
+      <label><input type="checkbox" id="consent" name="consent" required> I agree to the privacy policy *</label>
+      <div id="errors" class="err"></div>
+      <button type="button" id="next">Continue</button>
+    </fieldset>
+    <div id="review" class="hidden">
+      <h2>Review your application</h2>
+      <div id="summary"></div>
+      <button type="button" id="back">Back</button>
+      <button type="submit" id="submit">Submit application</button>
+    </div>
+  </form>
+  <div id="done" class="hidden"><h2>Thank you</h2></div>
+</div>
+
+<script>
+  const SCHOOLS = ['State University', 'University of Central Illinois', 'Illinois State University', 'Stanford University'];
+  if (location.hash === '#captcha') {
+    // a DataDome-style challenge overlay (SmartRecruiters showed exactly this to the agent on 2026-09-25)
+    const d = document.createElement('div');
+    d.id = 'ddChallengeContainer1';
+    d.innerHTML = '<iframe title="DataDome CAPTCHA" src="about:blank#geo.captcha-delivery.com/captcha/" width="300" height="200"></iframe>';
+    document.body.appendChild(d);
+  }
+  document.getElementById('applyBtn').addEventListener('click', () => {
+    document.getElementById('posting').classList.add('hidden');
+    document.getElementById('application').classList.remove('hidden');
+  });
+  const school = document.getElementById('school');
+  const menu = document.getElementById('schoolMenu');
+  school.addEventListener('input', () => {
+    const q = school.value.toLowerCase();
+    menu.innerHTML = '';
+    const hits = SCHOOLS.filter(s => s.toLowerCase().includes(q));
+    for (const s of hits) {
+      const li = document.createElement('li');
+      li.setAttribute('role', 'option'); li.textContent = s;
+      li.addEventListener('click', () => { school.value = s; menu.classList.add('hidden'); school.setAttribute('aria-expanded', 'false'); });
+      menu.appendChild(li);
+    }
+    menu.classList.toggle('hidden', hits.length === 0 || !q);
+    school.setAttribute('aria-expanded', hits.length && q ? 'true' : 'false');
+  });
+  document.getElementById('next').addEventListener('click', () => {
+    const f = document.getElementById('appForm');
+    const missing = [];
+    for (const el of f.querySelectorAll('[required]')) {
+      if (el.type === 'checkbox' ? !el.checked : el.type === 'file' ? !el.files.length : !el.value) missing.push(el.name);
+    }
+    if (!f.querySelector('input[name=auth]:checked')) missing.push('auth');
+    const err = document.getElementById('errors');
+    if (missing.length) { err.textContent = 'Please complete: ' + missing.join(', '); return; }
+    err.textContent = '';
+    document.getElementById('step1').classList.add('hidden');
+    document.getElementById('review').classList.remove('hidden');
+    document.getElementById('summary').textContent = 'Name: ' + f.first_name.value + ' ' + f.last_name.value;
+  });
+  document.getElementById('back').addEventListener('click', () => {
+    document.getElementById('review').classList.add('hidden');
+    document.getElementById('step1').classList.remove('hidden');
+  });
+  document.getElementById('appForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    try { await fetch('/apply', {method: 'POST', body: new FormData(e.target)}); } catch (_) {}
+    document.getElementById('review').classList.add('hidden');
+    document.getElementById('done').classList.remove('hidden');
+  });
+</script>
+</body>
+</html>

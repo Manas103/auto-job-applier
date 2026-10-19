@@ -1,0 +1,249 @@
+{
+ "id": "33896a40cf6d1001bbfdf481e3720000",
+ "questions": [
+  {
+   "id": "33896a40cf6d1001bbfdf78303810000",
+   "body": "<p>Have you volunteered in your community over the past 24 months?</p>",
+   "order": "g",
+   "possibleAnswers": [
+    {
+     "id": "203acd80e36f1001bbfdaaac64360000",
+     "answerText": "Yes",
+     "order": "a",
+     "score": 1
+    },
+    {
+     "id": "203acd80e36f1001bbfdaaac64360001",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "33896a40cf6d1001bbfdf6e931260005",
+   "body": "<p style=\"text-align:left\">Are you currently or have you been involved in extracurricular activities/programs at your college or university?</p>",
+   "order": "f",
+   "possibleAnswers": [
+    {
+     "id": "3675c1f1aeb91001bbfcbe391fae0000",
+     "answerText": "Yes",
+     "order": "a",
+     "score": 1
+    },
+    {
+     "id": "3675c1f1aeb91001bbfcbe391fae0001",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "33896a40cf6d1001bbfdf51bab3a0000",
+   "body": "<p style=\"text-align:left\">Please select your current college or university class <span class=\"WGU2\">standing/classification:</span></p>",
+   "order": "a",
+   "possibleAnswers": [
+    {
+     "id": "7cd8da16a09f1001b054e70732fb0001",
+     "answerText": "1st year (Freshman)",
+     "order": "a",
+     "score": 1
+    },
+    {
+     "id": "7cd8da16a09f1001b054e70732fb0002",
+     "answerText": "2nd year (Sophomore)",
+     "order": "b",
+     "score": 2
+    },
+    {
+     "id": "7cd8da16a09f1001b054e7b84e910000",
+     "answerText": "3rd year (Junior)",
+     "order": "c",
+     "score": 3
+    },
+    {
+     "id": "7cd8da16a09f1001b054e7b84e910001",
+     "answerText": "4th year (Senior)",
+     "order": "d",
+     "score": 2
+    },
+    {
+     "id": "7cd8da16a09f1001b054e8ec3a7e0000",
+     "answerText": "5th Year (Senior)",
+     "order": "e",
+     "score": 2
+    },
+    {
+     "id": "7cd8da16a09f1001b054e8ec3a7e0001",
+     "answerText": "Post Bachelor/Graduate studies (master's degree, doctoral degree, etc.)",
+     "order": "f",
+     "score": 2
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "33896a40cf6d1001bbfdf6e931260002",
+   "body": "<p>Are you currently working or have you gained work experience in the past 24 months?</p>",
+   "order": "e",
+   "possibleAnswers": [
+    {
+     "id": "203acd80e36f1001bbfdc2c3e0020001",
+     "answerText": "Yes",
+     "order": "a",
+     "score": 1
+    },
+    {
+     "id": "203acd80e36f1001bbfdc35dccd80000",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "33896a40cf6d1001bbfdf64f79cf0004",
+   "body": "<p>Have you previously completed an internship at an organization?</p>",
+   "order": "d",
+   "possibleAnswers": [
+    {
+     "id": "6589061797861001b05562abcf570000",
+     "branchingQuestion": {
+      "id": "33896a40cf6d1001bbfdf64f79cf0007",
+      "body": "<p>Have you previously completed an internship at Stryker?</p>",
+      "order": "d.a",
+      "possibleAnswers": [
+       {
+        "id": "6589061797861001b0556354d5d70000",
+        "answerText": "Yes",
+        "order": "a",
+        "score": 1
+       },
+       {
+        "id": "6589061797861001b05563f00d5c0000",
+        "answerText": "No",
+        "order": "b"
+       }
+      ],
+      "required": true,
+      "type": {
+       "id": "c4d9bd57996c10002583f04b9fc30042",
+       "descriptor": "Multiple Choice - Single Select"
+      }
+     },
+     "answerText": "Yes",
+     "order": "a",
+     "score": 1
+    },
+    {
+     "id": "6589061797861001b0556354d5d80000",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "33896a40cf6d1001bbfdf64f79cf0001",
+   "body": "<p style=\"text-align:left\">Have you or do you currently hold a leadership position at school, work, and/or extracurricular activities?</p>",
+   "order": "c",
+   "possibleAnswers": [
+    {
+     "id": "203acd80e36f1001bbfdc22998a20000",
+     "answerText": "Yes",
+     "order": "a",
+     "score": 2
+    },
+    {
+     "id": "203acd80e36f1001bbfdc22998a20001",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  },
+  {
+   "id": "33896a40cf6d1001bbfdf5b5905b0002",
+   "body": "<p>Please select the programming language and/or data platforms you have experience with over the past 24 months:</p>",
+   "order": "b",
+   "possibleAnswers": [
+    {
+     "id": "33896a40cf6d1001bbfce5c2ad360002",
+     "answerText": "Java, SQL, C#, C/C++, Python, etc.",
+     "order": "a",
+     "score": 1
+    },
+    {
+     "id": "33896a40cf6d1001bbfce65ca7de0000",
+     "answerText": "Tableau, PowerBI, SAS, etc.",
+     "order": "b",
+     "score": 1
+    },
+    {
+     "id": "33896a40cf6d1001bbfce65ca7de0001",
+     "answerText": "Other",
+     "order": "c",
+     "score": 1
+    },
+    {
+     "id": "33896a40cf6d1001bbfce65ca7de0002",
+     "answerText": "Not applicable to role/degree",
+     "order": "d"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c100025ab7d705b150045",
+    "descriptor": "Multiple Choice - Multi Select"
+   }
+  },
+  {
+   "id": "33896a40cf6d1001bbfdf64f79cf0007",
+   "body": "<p>Have you previously completed an internship at Stryker?</p>",
+   "order": "d.a",
+   "possibleAnswers": [
+    {
+     "id": "6589061797861001b0556354d5d70000",
+     "answerText": "Yes",
+     "order": "a",
+     "score": 1
+    },
+    {
+     "id": "6589061797861001b05563f00d5c0000",
+     "answerText": "No",
+     "order": "b"
+    }
+   ],
+   "required": true,
+   "type": {
+    "id": "c4d9bd57996c10002583f04b9fc30042",
+    "descriptor": "Multiple Choice - Single Select"
+   }
+  }
+ ]
+}

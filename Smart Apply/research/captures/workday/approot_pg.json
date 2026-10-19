@@ -1,0 +1,842 @@
+{
+ "applyWithProfile": {},
+ "analytics": {
+  "googleUniversalAnalyticsID": "UA-472001-6",
+  "pixelTrackingURLConfigurations": [
+   {
+    "url": "https://click.appcast.io/workday-9k/a17.png?ent=417&e=22439&t=1698956064316"
+   },
+   {
+    "url": "https://click.appcast.io/workday-9k/a17.png?ent=147&e=13412&t=1617117670386"
+   },
+   {
+    "url": "http://www.glassdoor.com/track/jobApply/complete.htm?partnerId=6305"
+   },
+   {
+    "url": "https://tracking.pandoiq.com/18032?noscript"
+   },
+   {
+    "url": "http://conv.indeed.com/pagead/conv/3049290291460940/?script=0"
+   },
+   {
+    "url": "https://px.ads.linkedin.com/collect/?pid=427860&fmt=gif%22"
+   },
+   {
+    "url": "https://ars2.equest.com/?apply&company_id=13810"
+   },
+   {
+    "url": "https://www.facebook.com/tr?id=717611165858772&ev=PageView&noscript=1"
+   }
+  ]
+ },
+ "brandingData": {
+  "progressBar": {
+   "color": "#FEDB00"
+  },
+  "button": {
+   "primary": {
+    "color": "#003DAF",
+    "borderColor": "#FFFFFF",
+    "textColor": "#FFFFFF",
+    "hover": {
+     "color": "#0099FF",
+     "borderColor": "#FFFFFF",
+     "textColor": "#000000"
+    }
+   },
+   "secondary": {
+    "color": "#003DAF",
+    "borderColor": "#FFFFFF",
+    "textColor": "#FFFFFF",
+    "hover": {
+     "color": "#0099FF",
+     "borderColor": "#FFFFFF",
+     "textColor": "#000000"
+    }
+   },
+   "shape": "SQUARE"
+  },
+  "header": {
+   "imageBanner": {
+    "maintainAspectRatio": true,
+    "image": {
+     "id": "5697b9c4ee2e1010104a824e391f0001",
+     "altText": "Begin a Meaningful Career Logo"
+    }
+   },
+   "banner": {
+    "color": "#FFFFFF",
+    "borderColor": "#FEDB00",
+    "textColor": "#003DA5",
+    "image": {
+     "id": "5697b9c4ee2e1010104a81b39d570002",
+     "altText": "P&G home page logo"
+    }
+   }
+  },
+  "embedded": false
+ },
+ "chatbotConfiguration": {
+  "paradoxWidgetToken": null
+ },
+ "configuredText": {
+  "applyConfirmationMessage": "<p>Congratulations! We understand that applying for jobs can be a tedious process. We are currently performing a comprehensive review of the information you provided. We will review it and send you next steps via email. Please check your email frequently for visibility on the status of your process.</p><p></p><p>Note: check junk email or include pgcareers.im&#64;pg.com as a trusted sender. \u00a0 \u00a0</p>",
+  "countryCustomLabel": "Country / Territory",
+  "countryPhoneCodeCustomLabel": "Country / Territory Phone Code"
+ },
+ "consentConfiguration": {
+  "consentConfigurationVendor": {
+   "id": "9de36ec94084100013e8560e84170000",
+   "descriptor": "Workday"
+  },
+  "oneTrustUrl": null
+ },
+ "facets": [
+  "locationCountry",
+  "locationRegionStateProvince",
+  "locations",
+  "Job_Profiles",
+  "workerSubType",
+  "timeType"
+ ],
+ "featureFlags": {
+  "skillsCloud": true,
+  "useAlternateCountryLabel": true,
+  "militarySkillsMapper": false,
+  "preferredName": true,
+  "hideSearchForJobs": true,
+  "jobAlerts": false,
+  "candidateAccounts": true,
+  "specialties": false,
+  "deleteMyInformation": true,
+  "embedMode": false,
+  "excludeSiteIndexing": false,
+  "requireCandidateAccounts": true,
+  "accountVerification": false,
+  "introduceYourself": false
+ },
+ "footer": {
+  "socialLinksList": [
+   {
+    "label": "Glassdoor",
+    "uri": "https://www.glassdoor.com/Overview/Working-at-Procter-and-Gamble-EI_IE544.11,29.htm"
+   },
+   {
+    "label": "YouTube",
+    "uri": "https://www.youtube.com/user/experiencePGnow"
+   },
+   {
+    "label": "Facebook",
+    "uri": "https://www.facebook.com/pgcareers/"
+   },
+   {
+    "label": "Twitter",
+    "uri": "https://twitter.com/PGCareers"
+   },
+   {
+    "label": "LinkedIn",
+    "uri": "https://www.linkedin.com/company/procter-and-gamble/"
+   }
+  ],
+  "privacyPolicy": {
+   "label": "P&G's Global Candidate Privacy Notice",
+   "uri": "https://privacypolicy.pg.com/employee/candidate/"
+  }
+ },
+ "header": {
+  "homePageURL": "https://www.pgcareers.com/",
+  "homeLinkText": "Search Jobs",
+  "imageBannerUri": "/1000/assets/banner",
+  "logoUri": "/1000/assets/logo",
+  "cookieBanner": {
+   "message": "<div><div><div><p>T<span>his website contains strictly necessary cookies. These cookies are necessary for the website to function and cannot be switched off in our systems. These cookies do not store any personally identifiable information.</span></p></div></div></div>",
+   "policy": "EVERYWHERE"
+  }
+ },
+ "languages": [
+  {
+   "descriptor": "Bahasa Indonesia (Indonesia)",
+   "languageCode": "id_ID"
+  },
+  {
+   "descriptor": "\u010ce\u0161tina (\u010cesk\u00e1 republika)",
+   "languageCode": "cs_CZ"
+  },
+  {
+   "descriptor": "Deutsch (Deutschland)",
+   "languageCode": "de_DE"
+  },
+  {
+   "descriptor": "English",
+   "languageCode": "en_US"
+  },
+  {
+   "descriptor": "English (Canada)",
+   "languageCode": "en_CA"
+  },
+  {
+   "descriptor": "English (United Kingdom)",
+   "languageCode": "en_GB"
+  },
+  {
+   "descriptor": "Espa\u00f1ol",
+   "languageCode": "es"
+  },
+  {
+   "descriptor": "Fran\u00e7ais (Canada)",
+   "languageCode": "fr_CA"
+  },
+  {
+   "descriptor": "Fran\u00e7ais (France)",
+   "languageCode": "fr_FR"
+  },
+  {
+   "descriptor": "Italiano (Italia)",
+   "languageCode": "it_IT"
+  },
+  {
+   "descriptor": "Magyar (Magyarorsz\u00e1g)",
+   "languageCode": "hu_HU"
+  },
+  {
+   "descriptor": "Nederlands (Nederland)",
+   "languageCode": "nl_NL"
+  },
+  {
+   "descriptor": "Polski (Polska)",
+   "languageCode": "pl_PL"
+  },
+  {
+   "descriptor": "Portugu\u00eas (Brasil)",
+   "languageCode": "pt_BR"
+  },
+  {
+   "descriptor": "Rom\u00e2n\u0103 (Rom\u00e2nia)",
+   "languageCode": "ro_RO"
+  },
+  {
+   "descriptor": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
+   "languageCode": "vi_VN"
+  },
+  {
+   "descriptor": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
+   "languageCode": "tr_TR"
+  },
+  {
+   "descriptor": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+   "languageCode": "ar"
+  },
+  {
+   "descriptor": "\u0e44\u0e17\u0e22 (\u0e1b\u0e23\u0e30\u0e40\u0e17\u0e28\u0e44\u0e17\u0e22)",
+   "languageCode": "th_TH"
+  },
+  {
+   "descriptor": "\u65e5\u672c\u8a9e (\u65e5\u672c)",
+   "languageCode": "ja_JP"
+  }
+ ],
+ "mlEnabled": true,
+ "personalInfoConfiguration": {
+  "nonUsConfiguration": [
+   {
+    "title": "Personal Information",
+    "instructions": "<p><span>At P&amp;G, we are committed to creating a workplace where equality and inclusion is valued and encouraged. As a result, P&amp;G </span>strongly encourages all candidates, especially members of designated groups, to self-identify through the survey below. Self-identification is a mechanism that P&amp;G can use to measure the effectiveness of our diversity initiatives. We are an equal opportunity employer and value diversity at our company. Equity-deserving groups including, but not limited to, people with disabilities, female, 2SLGBTQ&#43; and/or Black, Indigenous, Asian, Latin American, or two or more races are strongly encouraged to apply and self-identify. Any self-identification information you provide will be safely and securely stored by and assessed only by our Human Resources Team. Self-identification information will be anonymized and used in aggregate only.</p><p></p><p><span>For the purposes of employment equity, \u201cpersons with disabilities\u201d means persons who have any degree of physical disability, infirmity, malformation or disfigurement that is caused by bodily injury, birth defect or illness and, without limiting the generality of the foregoing, includes diabetes mellitus, epilepsy, a brain injury, any degree of paralysis, amputation, lack of physical co-ordination, blindness or visual impediment, deafness or hearing impediment, muteness or speech impediment, or physical reliance on a guide dog or other animal or on a wheelchair or other remedial appliance or device, a condition of mental impairment or a developmental disability, a learning disability, or a dysfunction in one or more of the processes involved in understanding or using symbols or spoken language, a mental disorder, or an injury or disability for which benefits were claimed or received under a workplace disability insurance plan.</span></p><p></p><p>Answering these questions is completely voluntary and there are no consequences if you do not wish to respond to any or all of them. To learn more about Diversity and Inclusion at P&amp;G Canada please visit <a href=\"http://pg.ca/en-ca/diversity-and-inclusion/\" target=\"_blank\">here</a>.</p>",
+    "country": {
+     "id": "a30a87ed25634629aa6c3958aa2b91ea",
+     "descriptor": "Canada"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "7b4fa1f369bd4604ba3692682fcbe345",
+     "descriptor": "United Arab Emirates"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "29247e57dbaf46fb855b224e03170bc7",
+     "descriptor": "United Kingdom"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "635d2e106177441f9100b9d8688fbb39",
+     "descriptor": "Venezuela"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "db69e8c8446c11de98360015c5e6daf6",
+     "descriptor": "Vietnam"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "4db3c26940b944919b83612cc1193eed",
+     "descriptor": "South Africa"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "bd34c524a6a04ae6915f5d96fa086199",
+     "descriptor": "Spain"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "6a800a4736884df5826858d435650f45",
+     "descriptor": "Sweden"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "187134fccb084a0ea9b4b95f23890dbe",
+     "descriptor": "Switzerland"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "873d0f604e3b458c990cb4d83a5c0f14",
+     "descriptor": "Thailand"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "c2e3bac5bbbb47b29dfc6e8b56a1586e",
+     "descriptor": "T\u00fcrkiye"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "f2e609fe92974a55a05fc1cdc2852122",
+     "descriptor": "Romania"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "026798f585c54d8d95bf6d6788611244",
+     "descriptor": "Russian Federation"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "50423b5190ad49bb89e94cd58dfaad69",
+     "descriptor": "Saudi Arabia"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "b3f8697442124d6aaeb752a13c1e8491",
+     "descriptor": "Serbia"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "80938777cac5440fab50d729f9634969",
+     "descriptor": "Singapore"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "d2f29df0c90f4cea9e7d17f2ed8a86ad",
+     "descriptor": "Slovakia"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "567ef1bd0cc84d4e83b98d0013008264",
+     "descriptor": "Pakistan"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "a390372e575c41ecb7240c51ce9067bd",
+     "descriptor": "Panama"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "0eb156ca580c4db786a7894bdaa77450",
+     "descriptor": "Peru"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "e56f1daf83e04bacae794ba5c5593560",
+     "descriptor": "Philippines"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "131d5ac7e3ee4d7b962bdc96e498e412",
+     "descriptor": "Poland"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "2e8c5034deb045d49315417c347472ca",
+     "descriptor": "Portugal"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "d004c0d1a6c84511ab048669fcdf9fd7",
+     "descriptor": "Austria"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "db69b812446c11de98360015c5e6daf6",
+     "descriptor": "Azerbaijan"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "d07f8ca8625e4345b98a91d0558b872a",
+     "descriptor": "Norway"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "972dc4ba8d454bc0b893ff84b1529077",
+     "descriptor": "Malaysia"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "e2adff9272454660ac4fdb56fc70bb51",
+     "descriptor": "Mexico"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "7aaca3f6fc774f16802a4df4718a5b53",
+     "descriptor": "Morocco"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "9696868b09c64d52a62ee13b052383cc",
+     "descriptor": "Netherlands"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "55273a1b49934d97ae15342ef51f6b95",
+     "descriptor": "New Zealand"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "db69d536446c11de98360015c5e6daf6",
+     "descriptor": "Nigeria"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "db69ebac446c11de98360015c5e6daf6",
+     "descriptor": "Kazakhstan"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "9e684fd7be1e469d9ee955a4c3b754be",
+     "descriptor": "Kenya"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "7a5a2aadf9d34086a2bfbfd408bc28da",
+     "descriptor": "Korea, Republic of"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "1c026f3b1b8640d8bdfcb95466663e4d",
+     "descriptor": "Latvia"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "6dfdb00cf8554fb9aab9f4ef39f830e0",
+     "descriptor": "Lebanon"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "328b82f597514643a7683a78fc67c3f1",
+     "descriptor": "Luxembourg"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "c4f78be1a8f14da0ab49ce1162348a5e",
+     "descriptor": "India"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "b31234dbcdda4da9ba8fa073c5944e36",
+     "descriptor": "Indonesia"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "04a05835925f45b3a59406a2a6b72c8a",
+     "descriptor": "Ireland"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "084562884af243748dad7c84c304d89a",
+     "descriptor": "Israel"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "8cd04a563fd94da7b06857a79faaf815",
+     "descriptor": "Italy"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "8b705da2becf43cfaccc091da0988ab2",
+     "descriptor": "Japan"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "a4051ef996ac40778d4c79e3f2dedfd2",
+     "descriptor": "Ukraine"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "dcc5b7608d8644b3a93716604e78e995",
+     "descriptor": "Germany"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "db69c640446c11de98360015c5e6daf6",
+     "descriptor": "Ghana"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "566388c1eb974c42bd9e3da4c2f57d60",
+     "descriptor": "Greece"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "db3b4b80df0f4287b262e5564c10edfa",
+     "descriptor": "Guatemala"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "9db257f5937e4421b2fac64eec6832f8",
+     "descriptor": "Hungary"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "2752bce253374948a6bad7ed2059e054",
+     "descriptor": "Ecuador"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "d865e83093ad42319653b08e61f7db49",
+     "descriptor": "Egypt"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "0afb2fa656da42e8bfb6d47bd24a26fa",
+     "descriptor": "Finland"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "54c5b6971ffb4bf0b116fe7651ec789a",
+     "descriptor": "France"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "53fe09ef12b9408682a1d2439823f2e0",
+     "descriptor": "Chile"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "e8106cd6a3534f2dba6fdee2d41db89d",
+     "descriptor": "Colombia"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "99abe7e6bb3f4c108aebebf01a369ec5",
+     "descriptor": "Costa Rica"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "1face6f426c14de9979a134697da0db3",
+     "descriptor": "Croatia"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "fc078443155c4ad294201ecf5a61a499",
+     "descriptor": "Czechia"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "49ab063f422741e2aef271de00efeac8",
+     "descriptor": "Denmark"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "db69b9fc446c11de98360015c5e6daf6",
+     "descriptor": "Bangladesh"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "a04ea128f43a42e59b1e6a19e8f0b374",
+     "descriptor": "Belgium"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "1a29bb1357b240ab99a2fa755cc87c0e",
+     "descriptor": "Brazil"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "25f4875dc598484dbeee857eb2d81652",
+     "descriptor": "Bulgaria"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "9e616caff5b1480aab04f1ce22d7e7d4",
+     "descriptor": "Algeria"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "e42ad5eac46d4cc9b367ceaef42577c5",
+     "descriptor": "Argentina"
+    }
+   },
+   {
+    "title": "Personal Information",
+    "instructions": null,
+    "country": {
+     "id": "d903bb3fedad45039383f6de334ad4db",
+     "descriptor": "Australia"
+    }
+   }
+  ]
+ },
+ "recommendedJobsEnabled": true,
+ "tenantDefaultCountry": {
+  "id": "bc33aa3152ec42d4995f4791a106ed09",
+  "descriptor": "United States of America"
+ },
+ "toggles": [
+  "b9739002c86510002015dea9402c0000",
+  "36ce9cb779e5100019c1a5050b9a0000",
+  "32bccbf501f610002313c4ee6e9c0000",
+  "e702eb48468610000d6ad4a553cb0000",
+  "812c4a153c711000151c5ca11e310000",
+  "0d6ebcfdc39a10001bc8f95b3aac0000",
+  "43b4d9d7cb8e10000a703bad20420000",
+  "532bfa92863b100019ab08f4c04b0000",
+  "dac26076be8510002347bab78d5a0000",
+  "badb3f02bef210000e20c92ac0260000",
+  "e466d0b066ff10000c3605be74f10000",
+  "292c4bafc34210001a28e93bebcf0000",
+  "b3999fdcfb7310001ed650a18cc80000",
+  "e42e6d1d2524100010042528c43e0000",
+  "f45271d06fcd10001b2d8737149f0000",
+  "b8ce26d67ff9100014ec4b645b840000",
+  "bc9894c7142610001616fde6e0700000",
+  "6edcf8e6cd7f10001b1f86c9e3ef0000",
+  "a969fb8f4cfd10000ad4ba96cd820000",
+  "459bb3f1e4a9100014b8f73a20850000",
+  "ab2374beb65d10002c8233ca9b5a0000",
+  "13809c87a71610001b62b41c11800000",
+  "31177c86226910001079dc24b7110000",
+  "4706b65dd8ee100015f0034e1e480000",
+  "6c7d10abcf8e100015455f96664e0000",
+  "7d2bc1254b7d10000e2b5811864a0000",
+  "78b52d8385791000141adb10f19a0000",
+  "560b3d5bfd701000208972c8730e0000",
+  "158e13f2980210000e5f46c2d5ae0000",
+  "b6678cba4dbc10000a476842e3bb0000",
+  "2e8eb95af853100024f8c97124d40000",
+  "65f18e16aea0100010c0b34df7700000",
+  "96cc49ab4185100014c0824814050000",
+  "e4f054463fea1000274c8a0d22ad0000",
+  "466d58ad03691000185ddce1282a0000",
+  "75ecc5f3792b1000131d51fc86ab0000",
+  "bc814e895c1d10000d1fd3354f4b0000",
+  "258d1be19f40100013265e0888c90000",
+  "cdbf5f0a33931000115a15a023a40000",
+  "20ccbc6c60701000fafdc3dce74a0000",
+  "16593e8eb6ca10000935b558a50a0000",
+  "e1733537b151100014e202818e520000",
+  "db3fa9600f8810001798c5a6d2dd0000",
+  "1502396ba0ef1000103c22d48c570000",
+  "9c10810cc40b1000460d082ad8de0000",
+  "9c10810cc40b100045f3593f47b50000",
+  "6658d90adc4f100014da5605f7080000",
+  "195d457a6acb10001008bcba6e490000",
+  "7412d755467b1000466a75950f5a0000",
+  "1fda372a2c2310002fdb093b08500000",
+  "f2f032937a19100012902c59ea990000",
+  "10f7a56eb11c100024a6d65b625a0000",
+  "25e5d9d7d60010001a37bac5c8790000",
+  "e1fdcb592a641000290e46a2b10f0000",
+  "5054a9c1a3eb1000262607b170020000",
+  "2af7a0871946100029867d9279b30000"
+ ]
+}
