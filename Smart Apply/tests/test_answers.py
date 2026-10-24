@@ -484,7 +484,7 @@ def test_mistakes_reported_2026_10_06():
     assert v["so"] == "Prefer not to say" and v["tg"] == "No"
 
 
-def test_follow_up_after_an_unanswered_question_waits_for_manas():
+def test_follow_up_after_an_unanswered_question_waits_for_the_user():
     p = _p()
     qs = [Question("q1", "Do you have a relative who is a member of the board?", "select", True, ["Yes", "No"]),
           Question("q2", "If yes, please share your GitHub profile.", "text", True)]

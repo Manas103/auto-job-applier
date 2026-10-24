@@ -120,7 +120,7 @@ def test_deterministic_answers_on_workday_questions(cfg, conn, tmp_path):
     assert packet.answers[kid.id].value == "State University"
 
 
-def test_attestations_unset_are_left_to_manas(cfg, conn, tmp_path):
+def test_attestations_unset_are_left_to_the_user(cfg, conn, tmp_path):
     qs = wd.normalize(_raw("stryker"))
     app = Application(id=1, job_id=1, company="Stryker", title="t", url="https://stryker.wd1.myworkdayjobs.com/x/job/a/b_R1", ats="workday",
                       ats_id=None, ats_params={}, role_folder=tmp_path, slug="x", workdir=tmp_path, state=AppState.PREFETCHED)
